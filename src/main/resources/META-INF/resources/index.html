@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>my-quarkus-project - 1.0-SNAPSHOT</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.1/handlebars.min.js"></script>
+    <style>
+      .speaker {
+        padding: 2rem;
+        margin: 2rem;
+        border-radius: 0.5rem;
+        color: #fff;
+        background-color: #fdba1d;
+      }
+      .speaker h1 {
+        margin: 1rem 0;
+      }
+      .speaker h2 {
+        font-weight: normal;
+        margin: 0.5rem 0;
+      }
+      .speaker .biography {
+        font-size: 12pt;
+        clear: left;
+      }
+      .speaker img {
+        width: 100px;
+        float: left;
+        margin: 1rem;
+        border-radius: 50px;
+      }
+    </style>
+</head>
+<body>
+
+
+<script id="speaker-template" type="text/x-handlebars-template">
+  <div class="speaker">
+    <img src="{{avatar}}"/>
+    <h1>{{name}}</h1>
+    <h2>{{company}}</h2>
+    <div class="biography">
+      {{biography}}
+    </div>
+  </div>
+</script>
+
+    <script type="text/javascript">
+    var source   = document.getElementById("speaker-template").innerHTML;
+    var template = Handlebars.compile(source);
+
+      function loadSpeakers(speakers){
+        for (const speaker of speakers) {
+          var span =  document.createElement("span")
+          span.innerHTML = template(speaker);
+          document.body.appendChild(span);
+        }
+      }
+    
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.onreadystatechange = function() { 
+          if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
+            loadSpeakers(JSON.parse(xmlHttp.responseText));
+        };
+        xmlHttp.open("GET", "/rest/speakers", true); // true for asynchronous 
+        xmlHttp.send(null);
+    </script>
+</body>
+</html>

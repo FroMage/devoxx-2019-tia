@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style type="text/css">
+      /* Slideshow styles */
+    </style>
+  </head>
+  <body>
+     <textarea id="source">
+# Quarkus demo
+
+In this demo we will show:
+
+- Getting started with Quarkus
+- Finding and adding extensions
+- Configuring Quarkus
+- Defining a REST endpoint
+- Using a REST client
+- Using Hibernate ORM with Panache and PostgreSQL
+
+---
+# Creating our application
+
+```bash
+$ mvn io.quarkus:quarkus-maven-plugin:0.13.0:create
+
+Set the project groupId [org.acme.quarkus.sample]: 
+Set the project artifactId [my-quarkus-project]: 
+Set the Quarkus version [1.0-SNAPSHOT]: 
+Do you want to create a REST resource? (y/n) [no]: y
+Set the resource classname [org.acme.quarkus.sample.HelloResource]: 
+Set the resource path  [/hello]: 
+Creating a new project in /home/emmanuel/src/my-quarkus-project
+Configuration file created in src/main/resources/META-INF/application.properties
+```
+---
+# Get some extensions
+
+```bash
+$ cd my-quarkus-project/
+$ ./mvnw quarkus:list-extensions
+$ ./mvnw quarkus:add-extension -Dextensions=smallrye-rest-client,\
+resteasy-jsonb,hibernate-orm-panache,quarkus-jdbc-postgresql
+```
+---
+# Set up PostgreSQL DB
+
+```bash
+$ sudo su - postgres
+[sudo] password for emmanuel: 
+postgres@atlantis:~$ createuser -PSRD quarkus-demo
+Enter password for new role: 
+Enter it again: 
+$ createdb -O quarkus-demo -E utf8 quarkus-demo
+$ exit
+```
+
+---
+# Configure DB in Quarkus
+
+- Edit `application.properties`
+
+```
+# configure your datasource
+quarkus.datasource.url: jdbc:postgresql://localhost:5432/quarkus-demo
+quarkus.datasource.driver: org.postgresql.Driver
+quarkus.datasource.username: quarkus-demo
+quarkus.datasource.password: quarkus-demo
+
+# drop and create the database at startup (use `update` to only update the schema)
+quarkus.hibernate-orm.database.generation=update
+```
+
+---
+# Start Quarkus
+
+- Start dev mode
+
+```bash
+$ ./mvnw compile quarkus:dev
+2019-04-08 17:30:35,342 INFO  [io.qua.dep.QuarkusAugmentor] (main) Beginning quarkus augmentation
+2019-04-08 17:30:36,226 INFO  [io.qua.dep.QuarkusAugmentor] (main) Quarkus augmentation completed in 884ms
+2019-04-08 17:30:37,691 INFO  [io.quarkus] (main) Quarkus 0.13.0 started in 2.503s. Listening on: http://[::]:8080
+2019-04-08 17:30:37,691 INFO  [io.quarkus] (main) Installed features: [agroal, cdi, hibernate-orm, jdbc-postgresql, narayana-jta, resteasy, resteasy-jsonb, smallrye-rest-client]
+```
+
+- Go to http://localhost:8080
+
+---
+# So what do we do?
+
+- We want to import the list of speakers from Riviera DEV
+- They have an API at https://rivieradev.fr/apiv1/talks
+- Appears to only list talks
+- Let's try to consume the API
+
+---
+# Using a REST client
+
+- Add the client definition:
+```java
+@Path("/apiv1")
+@RegisterRestClient
+public interface RdevClient {
+
+    @GET
+    @Path("/talks")
+    @Produces("application/json")
+    List<TalkTransfer> talks();
+}
+```
+- Add the data transfer object:
+```java
+public class TalkTransfer {
+    public String name;
+    public String description;
+}
+```
+- Configure your endpoint in `application.properties`:
+```
+org.acme.quarkus.sample.RdevClient/mp-rest/url=https://rivieradev.fr
+```
+
+---
+# Using a REST client 2
+
+- Update our REST endpoint `HelloResource`:
+
+```java
+@Path("rest")
+public class RestResource {
+
+    @Inject
+    @RestClient
+    RdevClient rdevClient;
+
+    @GET
+    @Produces(MediaType.APPLICATION_TEXT)
+    public String hello() {
+        return "hello";
+    }
+
+    @Path("talks")
+    @GET
+    @Produces(MediaType.APPLICATION_JSON)
+    public List<TalkTransfer> talks() {
+        return rdevClient.talks();
+    }
+}
+```
+
+- Try it at http://localhost:8080/rest/talks
+
+---
+# Now what?
+
+- We want to import the talks and store them locally
+- We will make a `POST` `/rest/import` endpoint to do the import
+- Let's start writing the endpoint
+
+```java
+    @Transactional
+    @Path("import")
+    @POST
+    public String importData() {
+        TalkEntity.deleteAll();
+        for (TalkTransfer talkTransfer : rdevClient.talks()) {
+            TalkEntity talkEntity = new TalkEntity();
+            talkEntity.title = talkTransfer.name;
+            talkEntity.description = talkTransfer.description;
+            talkEntity.persist();
+        }
+        return String.format("Imported %s talks\n", TalkEntity.count());
+    }
+```
+
+---
+# Our entity
+
+- This is our entity
+```java
+@Entity
+public class TalkEntity extends PanacheEntity {
+    public String title;
+    @Lob
+    public String description;
+}
+```
+- Now import the talks
+```bash
+$ curl -X POST http://localhost:8080/rest/import
+Imported 82 talks
+```
+
+---
+# Let's see the stored talks
+- And spit them back
+```java
+    @Transactional
+    @Path("talks")
+    @GET
+    @Produces(MediaType.APPLICATION_JSON)
+    public List<TalkEntity> talks() {
+        return TalkEntity.listAll();
+    }
+```
+- See this at http://localhost:8080/rest/talks
+
+---
+# Remember we wanted the speakers?
+
+- Add the speaker data transfer object:
+```java
+public class SpeakerTransfer {
+    public String name;
+    public String description;
+    public String company;
+    public String avatar;
+}
+```
+- Add it to the talk data transfer object:
+```java
+public class TalkTransfer {
+    public String name;
+    public String description;
+    public SpeakerTransfer[] speakers;
+}
+```
+
+---
+# Import speakers
+
+```java
+            for (SpeakerTransfer speakerTransfer : talkTransfer.speakers) {
+                SpeakerEntity speakerEntity = SpeakerEntity.find("name", speakerTransfer.name).firstResult();
+                if(speakerEntity == null) {
+                    speakerEntity = new SpeakerEntity();
+                    speakerEntity.name = speakerTransfer.name;
+                    speakerEntity.biography = speakerTransfer.description;
+                    speakerEntity.company = speakerTransfer.company;
+                    speakerEntity.avatar = speakerTransfer.avatar;
+                }
+                talkEntity.speakers.add(speakerEntity);
+            }
+```
+
+---
+# Resulting speaker entity
+```java
+@Entity
+public class SpeakerEntity extends PanacheEntity {
+
+    public String name;
+    @Lob
+    public String biography;
+    public String company;
+    public String avatar;
+    @JsonbTransient
+    @ManyToMany(mappedBy = "speakers", cascade = CascadeType.ALL)
+    public List<TalkEntity> talks = new ArrayList<>();
+}
+```
+- And on `Talk`
+```java
+    @JsonbTransient
+    @ManyToMany(cascade = CascadeType.ALL)
+    public List<SpeakerEntity> speakers = new ArrayList<>();
+```
+
+---
+# Returning speakers to the client
+
+- Add endpoint:
+```java
+    @Path("speakers")
+    @Transactional
+    @GET
+    @Produces(MediaType.APPLICATION_JSON)
+    public List<SpeakerEntity> speakers() {
+        return SpeakerEntity.listAll(Sort.by("name"));
+    }
+```
+
+---
+# Now use the speaker list
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>my-quarkus-project - 1.0-SNAPSHOT</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.1/handlebars.min.js"></script>
+    <style>
+      .speaker {
+        padding: 2rem;
+        margin: 2rem;
+        border-radius: 0.5rem;
+        color: #fff;
+        background-color: #fdba1d;
+      }
+      .speaker h1 {
+        margin: 1rem 0;
+      }
+      .speaker h2 {
+        font-weight: normal;
+        margin: 0.5rem 0;
+      }
+      .speaker .biography {
+        font-size: 12pt;
+        clear: left;
+      }
+      .speaker img {
+        width: 100px;
+        float: left;
+        margin: 1rem;
+        border-radius: 50px;
+      }
+    </style>
+</head>
+<body>
+
+
+<script id="speaker-template" type="text/x-handlebars-template">
+  <div class="speaker">
+    <img src="{{avatar}}"/>
+    <h1>{{name}}</h1>
+    <h2>{{company}}</h2>
+    <div class="biography">
+      {{biography}}
+    </div>
+  </div>
+</script>
+
+    <script type="text/javascript">
+    var source   = document.getElementById("speaker-template").innerHTML;
+    var template = Handlebars.compile(source);
+
+      function loadSpeakers(speakers){
+        for (const speaker of speakers) {
+          var span =  document.createElement("span")
+          span.innerHTML = template(speaker);
+          document.body.appendChild(span);
+        }
+      }
+    
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.onreadystatechange = function() { 
+          if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
+            loadSpeakers(JSON.parse(xmlHttp.responseText));
+        };
+        xmlHttp.open("GET", "/rest/speakers", true); // true for asynchronous 
+        xmlHttp.send(null);
+    </script>
+</body>
+</html>
+```
+
+---
+# Try it out
+
+- Go to http://localhost:8080
+    </textarea>
+     <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    </script>
+    <script>
+       var slideshow = remark.create();
+    </script>
+  </body>
+</html>
