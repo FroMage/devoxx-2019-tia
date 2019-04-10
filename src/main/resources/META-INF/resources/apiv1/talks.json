@@ -1,0 +1,1398 @@
+[
+ {
+  "name": "Quarkus: Pourquoi & Comment faire une appli Java Cloud Native avec Graal VM",
+  "description": "Les applications Cloud Native (microservices classiques, event-driven, serverless) en Java, c’est bien. Mais pas que. Malgré son énorme écosystème technique et humain, Java souffre dans les containers face à Golang ou Node.js: consommation mémoire initiale haute, temps de démarrage digne d’un diesel, etc. Vous êtes-vous demandé pourquoi peu de fonctions AWS-Lamba ou Azure sont écrites en Java?\r\n\r\nLa donne change grâce au projet Graal VM: une compilation des applications Java en binaire natif. Il permet:\r\n\r\n- des temps de démarrages en millisecondes\r\n- des consommations mémoire système initiale de l’ordre de la dizaine de MB\r\n- des dépendances et donc des tailles de containers minimales\r\n\r\nMais ce n’est pas gratuit et beaucoup de challenges se dressent entre votre application Java et sa compilation en natif par Graal VM. Quarkus a été architecturé pour résoudre ces problèmes.\r\n\r\nObjectif de la session: Plonger dans l’univers Quarkus, comprendre pourquoi Graal VM est le prochain gros virage du monde Java que vous utilisiez Graal VM ou pas. Et surtout apprendre comment rendre vos applications vraiment Nativement Cloud Native. Démo et live coding inclus bien sûr.\r\n\r\nLa donne change grâce au projet Graal VM: une compilation des applications Java vers du code natif. Il permet:\r\n\r\ndes temps de démarrages en millisecondes\r\ndes consommations mémoire système initiale de l’ordre de la dizaine de MB\r\ndes dépendances et donc des tailles de containers minimales\r\nMais ce n’est pas gratuit et beaucoup de challenges se dressent entre votre application Java et sa compilation en natif par Graal VM.\r\n\r\nVenez plonger dans cet univers, comprendre pourquoi Graal VM est le prochain gros virage du monde Java que vous utilisiez Graal VM ou pas. Et surtout vous apprendrez comment rendre vos applications vraiment Nativement Cloud Native. Démo et live coding inclus bien sûr.",
+  "start": 1557921600000,
+  "end": 1557932400000,
+  "category": "JUDCon Deep Dive Conference",
+  "place": "JUDCon Deep Dive Conference",
+  "speakers": [
+   {
+    "name": "Emmanuel Bernard",
+    "description": "Emmanuel Bernard is a long time Open Source contributor and Java champion best known for his contributions to Hibernate ORM and Hibernate Validator as well as JPA and Bean Validation. He co-hosts Les Cast Codeurs, a developer podcast in French.  \r\nEmmanuel Bernard is Chief Architect at Red Hat in the Middleware Business Unit. As Chief Architect, he oversees how data and middleware interact and is involved in Hibernate, Infinispan, Debezium (Change Data Capture) and more. To sum up, everything data :)",
+    "company": "Red Hat",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=572",
+    "social": {
+     "twitterUrl": "http://twitter.com/emmanuelbernard"
+    }   }, 
+   {
+    "name": "Clément Escoffier",
+    "description": "Qui suis-je ? Bonne question. J'ai été chercheur à l’université de Grenoble, architecte chez Axway, directeur de l'innovation dans une boite allemande.... Actuellement je suis core developer sur vert.x, et je travaille pour Red Hat. J’ai touché à beaucoup de domaines: OSGi, mobile, continuous delivery, devops, HTML5… Mon but ? Fournir des outils, des méthodes pour rendre le développement plus efficace mais également plus agréable et plus fun. Je suis un contributeur actif sur de nombreux projets Open Source comme Apache Felix, iPOJO, Wisdom et bien évidement vert.x.",
+    "company": "Red Hat",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=761",
+    "profilUrl": "http://escoffier.me",
+    "social": {
+     "twitterUrl": "http://twitter.com/clementplop"
+    }   } 
+  ]
+ }, 
+ {
+  "name": "L'open-source à la rescousse de mes APIS: comment les sécuriser grâce à Gravitee.io et Keycloak",
+  "description": "Les concepts de CORS, OAuth, OpenID Connect, SAML, JWT rate-limiting, quota,...  sont maintenant largement répandus mais pourtant mal maîtrisés et pas toujours mis en oeuvre dans les règles de l'art.\r\nPour faciliter la vie du développeur, nous allons voir comment mettre en place la sécurisation de vos APIs sans avoir à intervenir sur vos backends grâce aux outils open-source que sont Gravitee.io et Keycloak.\r\n",
+  "start": 1557994800000,
+  "end": 1557997800000,
+  "category": "JUDCon Conference",
+  "place": "JUDCon Conference",
+  "speakers": [
+   {
+    "name": "Guillaume GILLON",
+    "description": "Responsable produit API Management chez Decathlon et contributeur au produit Gravitee.io. J’accompagne les équipes business dans l’APIsasion de leurs applications, le design de leurs APIs et leur architecture. Passionné par l'écosystème Front et l’architecture logiciel en général.",
+    "company": "Decathlon",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=537"   } 
+  ]
+ }, 
+ {
+  "name": "What is new in Eclipse MicroProfile Metrics 2.0?",
+  "description": "Eclipse MicroProfile Metrics defines a common way of exposing system and application metrics from MicroProfile applications and the respective servers.\r\n\r\nIn Metrics 1.x we have defined a model that allows you to easily annotate Java methods and fields etc. to expose their value or call counts.\r\n\r\nDuring the last 2 years the MicroProfile Metrics team has received a lot of feedback which got incorporated into Metrics 2.0\r\n\r\nIn this talk you learn about MicroProfile Metrics, the news in Metrics 2.0 and also about SmallRye as an open source implementation of the specification",
+  "start": 1558006200000,
+  "end": 1558009200000,
+  "category": "JUDCon Conference",
+  "place": "JUDCon Conference",
+  "speakers": [
+   {
+    "name": "Heiko W. Rupp",
+    "description": "Heiko is an open source enthusiast working for more than a decade at Red Hat in the area of middleware monitoring and management. In this role, he has been project lead of the RHQ and Hawkular monitoring systems and has also been contributing to various other projects. Nowadays he is working on Kiali, a project to observe the behavior of the Istio Service Mesh.\r\n\r\nCurrently, he helps to define the next way of Java Microservices with his work on Eclipse MicroProfile. As such he is the spec lead of the Eclipse MicroProfile Metrics effort and also contributing to other specifications.\r\n\r\nHeiko has written the first German book about JBossAS and one of the first German books on EJB3. He lives with his family in Stuttgart, Germany.",
+    "company": "Red Hat",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=535",
+    "social": {
+     "twitterUrl": "http://twitter.com/pilhuhn"
+    }   } 
+  ]
+ }, 
+ {
+  "name": "Create cloud-native MicroServices with MicroProfile and use the Istio service mesh to run them.",
+  "description": "MicroProfile is a set of frameworks that started to cater for modern cloud-native development practices for Java. Some of the sub-specs are:\r\n* Metrics - get metrics about your application\r\n* Config - easily externalise the configuration of your application\r\n* Fault tolerance - take care of failures while calling other services\r\n* Distributed Tracing - do profiling of your micro services application over the boundaries of an individual server\r\n\r\nIstio as one of the more popular service meshes also brings some of those features as part of the platform.\r\n\r\nIn this talk we will have a look at what Istio and MicroProfile provide and how you can best combine the two to run your application in an optimal way in a service mesh environment.\r\n\r\n",
+  "start": 1557903600000,
+  "end": 1557914400000,
+  "category": "JUDCon Workshop",
+  "place": "JUDCon Workshop",
+  "speakers": [
+   {
+    "name": "Heiko W. Rupp",
+    "description": "Heiko is an open source enthusiast working for more than a decade at Red Hat in the area of middleware monitoring and management. In this role, he has been project lead of the RHQ and Hawkular monitoring systems and has also been contributing to various other projects. Nowadays he is working on Kiali, a project to observe the behavior of the Istio Service Mesh.\r\n\r\nCurrently, he helps to define the next way of Java Microservices with his work on Eclipse MicroProfile. As such he is the spec lead of the Eclipse MicroProfile Metrics effort and also contributing to other specifications.\r\n\r\nHeiko has written the first German book about JBossAS and one of the first German books on EJB3. He lives with his family in Stuttgart, Germany.",
+    "company": "Red Hat",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=535",
+    "social": {
+     "twitterUrl": "http://twitter.com/pilhuhn"
+    }   } 
+  ]
+ }, 
+ {
+  "name": "Démystifions les CSS Custom Properties",
+  "description": "Les CSS Variables, de leur vrai nom : Custom Properties, sont désormais supportées par tous les navigateurs modernes. Et pourtant, elles restent sous-utilisées ! Venez découvrir les fonctionnalités offertes par cette nouvelle spécification, ses avantages, ses limites et ainsi vous convertir à l’utilisation massive des variables dans vos projets web !",
+  "start": 1558096200000,
+  "end": 1558099200000,
+  "category": "Conference 2",
+  "place": "Conference 2",
+  "speakers": [
+   {
+    "name": "Audrey Garreau",
+    "description": "Audrey est Intégratrice Web senior. Elle a co-fondé l'agence Yumigo en 2015. Mue par une insatiable soif d'apprendre et consciente que le diable est dans les détails, elle perfectionne sans cesse sa technique à 360°. Ses chantiers de prédilection : responsive, accessibilité, performance. Elle s'engage pour améliorer la place de la femme dans le numérique. Signe particulier : enchaîne les escape rooms nantaises comme des M&Ms (aucune défaite à ce jour ^^).",
+    "company": "Yumigo",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=590",
+    "social": {
+     "twitterUrl": "http://twitter.com/garreau_audrey"
+    }   }, 
+   {
+    "name": "jean-francois garreau",
+    "description": "GDE Web Technology, je travaille pour Sfeir en tant que CTO de l'agence de Nantes.\r\n\r\nEn dehors du travail, je suis co-fondateur du GDG Nantes, organisateur du DevFest Nantes, co-créateur des Nantes Wit\r\n\r\nRetrouvez l'ensemble de mes contributions sur https://github.com/jefBinomed",
+    "company": "Sfeir",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=589",
+    "social": {
+     "twitterUrl": "http://twitter.com/jefbinomed"
+    }   } 
+  ]
+ }, 
+ {
+  "name": "How Kubernetes and Eclipse Che will change your developer's life.",
+  "description": "Eclipse Che is a Cloud IDE. It is built with Kubernetes, running on Kubernetes and ready to code apps for Kubernetes.\r\nChe7 is coming with a huge amount of exciting features: VSCode extension compatibility, dynamic container based plugins, more language support thanks to LSP, etc.\r\nDuring this talk, through live demos, I will show you how it is changing my developer life ... and how it will change yours.",
+  "start": 1558096200000,
+  "end": 1558099200000,
+  "category": "JUDCon Conference",
+  "place": "JUDCon Conference",
+  "speakers": [
+   {
+    "name": "Sun Seng David TAN",
+    "description": "Senior Software Engineer @ibm @RedHat. Eclipse Che committer. OpenSource Minded. @parisjug leader.",
+    "company": "Red Hat",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=538",
+    "social": {
+     "twitterUrl": "http://twitter.com/sunsengdavidtan"
+    }   } 
+  ]
+ }, 
+ {
+  "name": "Comment se faire hacker bien comme il faut!",
+  "description": "Et encore une fuite de numéros de cartes de crédit sur internet! https://www.infoq.com/news/2018/11/british-airways-data-breach\r\n\r\nC'est révoltant n'est-ce pas ? Mais attends, qu'est-ce qu'on fait nous pour s'assurer que notre appli n'est pas une passoire? \r\n\r\nDans cette live-coding-hacking session, venez découvrir les erreurs les plus communes en sécurité, que la grande majorité d'entre nous font sans même le savoir!\r\n\r\nAprès cela, vous ne verrez plus votre application de la même manière...\r\n",
+  "start": 1558080600000,
+  "end": 1558083600000,
+  "category": "Conference 1",
+  "place": "Conference 1",
+  "speakers": [
+   {
+    "name": "Julien Topçu",
+    "description": "Senior Lead Developer à la Société Générale, je suis un fervent défenseur du Software Craftsmanship.\r\n\r\nJ'évangélise activement autour de DDD/Hexagonal Architecture, l'XP et le Kanban #NoEstimates au sein de cours et de conférences ainsi qu'à travers d'articles de [blog](https://medium.com/@julien.topcu).\r\n\r\nMembre de la fondation OWASP, je m'efforce de transmettre à la communauté une philosophie DevSecOps que je pense être l'avenir du métier de développeur. J'ai participé à la mise en place de pipeline de Continuous Security à l'échelles d'entreprises.\r\n",
+    "company": "Société Générale",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=563",
+    "social": {
+     "twitterUrl": "http://twitter.com/JulienTopcu"
+    }   } 
+  ]
+ }, 
+ {
+  "name": "Boostez le chargement de vos images !",
+  "description": "Votre UX designer vous a fourni une superbe image de licorne 🦄 que vous devez à présent intégrer dans votre site web. Mais, voilà elle fait 3 Mo !!! Bon, que faire ? Vous vous dites que vous êtes un Pro de Gimp alors que vous réussirez bien à réduire la taille. Vous arrivez finalement à avoir une image potable de 350 Ko, vous vous dites, c'est bon ça passe crème !!!\r\n\r\nEt le lendemain, votre UX designer vous donnes 200 chatons 🐱 à intégrer ! Et votre manager vous dis que la licorne est floue ! Là, vous vous dites c'est tendu !!!!\r\n\r\nEt si vous veniez plutôt à ce talk où je vous donnerai 5 astuces efficaces pour booster le chargement de vos images ? Découvrons ensemble le tag source, le chargement multi-device, WebP, etc...",
+  "start": 1558104600000,
+  "end": 1558106100000,
+  "category": "Conference 1",
+  "place": "Conference 1",
+  "speakers": [
+   {
+    "name": "Jean-Michael Legait",
+    "description": "Je suis développeur Front-End chez CrossKnowledge, l'un des leaders mondiaux du e-learning 🎓.\r\nJe suis également l'un des organisateurs de la conférence Riviera DEV sur Sophia-Antipolis.\r\nJe suis fan des technos JavaScript 😍 et je m'éclate actuellement avec du Vue.js",
+    "company": "CrossKnowledge",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=562",
+    "social": {
+     "twitterUrl": "http://twitter.com/jmlegait"
+    }   } 
+  ]
+ }, 
+ {
+  "name": "The Old Man Glitch - Escalade de bug dans la première génération de Pokemon sur GameBoy.",
+  "description": "Un vieux bug dans du code 8-bit d'un jeu de 1996, des techniques obsolètes d'escalade de failles, et beaucoup trop de temps passé dessus par des passionnés - juste pour la beauté de la chose.\r\n\r\nOff-by-one error, underflow, buffer overflow, injection de code... mais avec des Pokémons alors même les parents vont comprendre.\r\n\r\n\\#NoSlide \\#LiveGlitching \\#Debugger \\#Emulateur \\#OnVaBienSamuser\r\n",
+  "start": 1557994800000,
+  "end": 1557997800000,
+  "category": "Ateliers «On n'est pas que des codeurs»",
+  "place": "Ateliers «On n'est pas que des codeurs»",
+  "speakers": [
+   {
+    "name": "Fabien Tregan",
+    "description": "Not some kind of weirdos from another planet. I wish I were.",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=565",
+    "social": {
+     "twitterUrl": "http://twitter.com/ftregan"
+    }   } 
+  ]
+ }, 
+ {
+  "name": "Deep Dive Kotlin: du Hello World au Bytecode",
+  "description": "Comment aborder un nouveau langage ? Les uns répondent en codant, les autres en regardant son fonctionnement en détail. Dans ce 'Deep Dive' nous vous proposons les deux ! Quoi de mieux qu'un live-coding d'un exercice complet pour découvrir les idiomes du langage. Puis en regardant sous le capot, les fonctionnalités que nous n'avons pas (encore) en Java, ne resteront plus un mystère pour vous !",
+  "start": 1557903600000,
+  "end": 1557914400000,
+  "category": "Deep-Dive Conference 1",
+  "place": "Deep-Dive Conference 1",
+  "speakers": [
+   {
+    "name": "Emmanuel Vinas",
+    "description": "J'ai consacré mes 12 années d'expériences en développement à faire principalement du backend java et des applications Mobile Android. Mais tout ce qui touche aux technologies en général m'intèresse. En ce moment je touche à ce qui tourne autour du mobile Android, web back/front, aux \"nouveau\" paradigmes de programmation reactive, et les nouveaux langages (Kotlin, Rust, Golang, Swift...).\r\n\r\nJe m'implique également dans les communautés de devs, je suis organisateur au GDG Toulouse, Devfest Toulouse, MonkeyTechday. \r\n\r\nMes dernières conférences (en premier les plus récentes):\r\n- Kotlin Multiplatform (GDG Toulouse )\r\n- Deep dive into Kotlin , du hello word au bytecode (Devoxx Fr 2018) : https://www.youtube.com/watch?v=cXNGhDiQgmo\r\n- Kotlin by Exemple (Devoxx Maroc 2017)\r\n- Hands on Kotlin by Exemple (Devoxx Maroc 2017)\r\n- De Java à Swift ou Kotlin (GDG Toulouse  2017) : https://www.youtube.com/watch?v=p-pUYfZrJ4o\r\n- Kotlin vs Swift (MonkeyTechDay 2017)\r\n- Leak canary (GDG Toulouse 2017)\r\n- Synchronisation mobile via CouchBase (GDG Toulouse  2016)\r\n- Feign vs Retrofit (MonkeyTechDay 2016)\r\n- Retrofit vs Feign (GDG Toulouse 2016)",
+    "company": "MonkeyPatch",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=577",
+    "social": {
+     "twitterUrl": "http://twitter.com//EmmanuelVinas"
+    }   }, 
+   {
+    "name": "Igor Laborie",
+    "description": "Développeur passionné depuis plus de 18 ans, expert dans les technos Java et Web. Je suis impliqué dans les rendez-vous techniques toulousains (Devfest Toulouse, GDG, JUG, Software Craftsmanship Toulouse). J’apprécie la programmation fonctionnelle, et donc particulièrement je suis attiré par les nouveaux langages et frameworks qui vont dans cette direction.\r\n\r\nEt puis je sais dessiner une 🦄 en CSS.",
+    "company": "MonkeyPatch",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=766",
+    "social": {
+     "twitterUrl": "http://twitter.com/ilaborie"
+    }   } 
+  ]
+ }, 
+ {
+  "name": "Introduce girls to programming and reduce the gender gap",
+  "description": "Science, Technology, Engineering and Mathematics (STEM) is what our society needs to focus on if it wants to be competitive in the future. But in order to succeed with that, it also needs to let kids discover the best career for them without influences from gender stereotypes. In tech we will be missing out almost 50% of our potential unless we start encouraging girls to choose a tech career. \r\nWe will share why and how we organize an event we call Hackdays4Girls and what will enable you to awake your daughters (and sons) enthusiasm for tech & coding. You will learn what to take care of if you want to encourage also other girls from within your JUG, company or your child's school. We will take a look at block-programming with Scratch, as well as microcontrollers such as the BBC Micro:bit.\r\n",
+  "start": 1558092600000,
+  "end": 1558095600000,
+  "category": "Conference 1",
+  "place": "Conference 1",
+  "speakers": [
+   {
+    "name": "Ansgar Brauner",
+    "description": "Ansgar Brauner works at REWE Digital as Software Architect, taking care of the Domain Fulfillment. He started at REWE Digital in 2014 to help one of Europe’s biggest food retailers building the leading food eCommerce platform in Europe. Beside enabling 15 teams to work autonomously he helps the product owners to not neglect the technical view. Ansgar leads the Java User Group Dortmund is a speaker at international software development conferences like JavaOne, Devnexus, JPrime and Javaland.",
+    "company": "REWE Digital",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=569",
+    "social": {
+     "twitterUrl": "http://twitter.com/a_brauner"
+    }   }, 
+   {
+    "name": "Laura Luiz",
+    "description": "Laura Luiz is a Software Engineer at commercetools, where she designs and builds open-source libraries and applications running on the JVM. After working at Fundació i2CAT in Barcelona, she moved to Berlin in 2012 to help commercetools in developing a modern commerce platform. She leads the Sunrise project, which includes a Java/Scala framework to build online stores on top of the REST API of the platform. When she is not coding, she can be found playing video games, very likely a good old classic.",
+    "company": "commercetools",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=570"   } 
+  ]
+ }, 
+ {
+  "name": "Architecture hexagonale",
+  "description": "Dans les SI d'entreprises les technologies évoluent vite. Au contraire, ce qui ne bouge pas, c'est le métier. Mais alors comment faire pour avoir des applications toujours à jour sans impacter le métier ? Comment faire des migrations moins douloureuses ? \r\n\r\nInspiré par le travail d'Alistair Cockburn à propos de l'architecture hexagonale, ce talk vise à présenter ses concepts, et les problématiques associées.\r\nLa seule constante du numérique étant le changement, venez découvrir des principes faciles à mettre en oeuvre, avec des exemples, pour découpler votre code métier et développer des applications capables de supporter le changement constant.\r\n",
+  "start": 1558101000000,
+  "end": 1558104000000,
+  "category": "Conference 2",
+  "place": "Conference 2",
+  "speakers": [
+   {
+    "name": "Pauline Iogna",
+    "description": "Pauline est une développeuse passionnée et membre de Duchess France. Elle a commencé à travailler en tant qu'ingénieur d'études et développements en entreprise à Paris. Depuis elle a exercé le poste de techlead. \r\n\r\nA présent elle a rejoint Lunatech en tant que développeur senior. \r\n\r\nElle est aussi enseignante à l'université, ainsi elle peut combiner les deux avantages de relever de nouveaux challenges en tant qu'ingénieur et partager sa passion avec les étudiants. Elle s’intéresse en particulier au langages java et scala, aux tests automatisés et au courants devops et craftsmanship, elle aime travailler sur des projets coté backend.",
+    "company": "Lunatech",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=579",
+    "social": {
+     "twitterUrl": "http://twitter.com/pauline_io"
+    }   } 
+  ]
+ }, 
+ {
+  "name": "Les Cast Codeurs: un podcast dans votre conf",
+  "description": "Un grand sage a dit: \"C'est pas parce qu'on a rien à dire qu'il faut la fermer.\"\r\n\r\nVenez suivre cet adage avec les cast codeurs lors d'une session où les développeurs discutent de leur vue du monde... du développement.",
+  "start": 1558106400000,
+  "end": 1558108800000,
+  "category": "Conference 1",
+  "place": "Conference 1",
+  "speakers": [
+   {
+    "name": "Audrey Neveu",
+    "description": "Audrey est développeur full-stack. Passionnée par son métier, Audrey a toujours été fortement engagée dans la communauté Java au travers de plusieurs JUGs et conférences (Duchess France, Paris JUG, Devoxx France, Devoxx UK) mais aussi au sein d’initiatives visant à faire découvrir la programmation aux plus jeunes (Programatoo, Devoxx4Kids). Plus récemment elle a également rejoint l’équipe des Cast Codeurs.",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=573",
+    "social": {
+     "twitterUrl": "http://twitter.com/Audrey_Neveu"
+    }   }, 
+   {
+    "name": "Guillaume Laforge",
+    "description": "Developer Advocate at @Google for @GoogleCloud during the day, and @ApacheGroovy programming language project co-founder & PMC member, @java_champions at night.",
+    "company": "Google",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=574",
+    "social": {
+     "twitterUrl": "http://twitter.com/glaforge"
+    }   }, 
+   {
+    "name": "Emmanuel Bernard",
+    "description": "Emmanuel Bernard is a long time Open Source contributor and Java champion best known for his contributions to Hibernate ORM and Hibernate Validator as well as JPA and Bean Validation. He co-hosts Les Cast Codeurs, a developer podcast in French.  \r\nEmmanuel Bernard is Chief Architect at Red Hat in the Middleware Business Unit. As Chief Architect, he oversees how data and middleware interact and is involved in Hibernate, Infinispan, Debezium (Change Data Capture) and more. To sum up, everything data :)",
+    "company": "Red Hat",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=572",
+    "social": {
+     "twitterUrl": "http://twitter.com/emmanuelbernard"
+    }   }, 
+   {
+    "name": "Arnaud Heritier",
+    "description": "Spécialisé dans le développement logiciels et l'automatisation des processus, il participe depuis de nombreuses années à divers [projets opensource](https://www.ohloh.net/accounts/aheritier) comme [Jenkins](http://jenkins-ci.org) ou [Apache Maven](http://maven.apache.org). Il contribue autant que possible à différentes communautés autour de Java et DevOps. Il co-anime le podcast [Les CastCodeurs](https://lescastcodeurs.com) et participe à l'organisation de la conférence [Devoxx France](http://www.devoxx.fr).\r\n\r\nEn 2015, il rejoint en tant que responsable de l'équipe support [CloudBees, Inc.](http://www.cloudbees.com), éditeur de logiciels spécialisé dans la livraison en continu et contributeur majeur à [Jenkins](http://jenkins-ci.org).",
+    "company": "Cloudbees",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=571",
+    "social": {
+     "twitterUrl": "http://twitter.com/aheritier"
+    }   } 
+  ]
+ }, 
+ {
+  "name": "GOTO Zero",
+  "description": "Je souhaite partager mon expérience du zéro déchet. Pour cela, j'expliquerai rapidement mes motivations et ce que cela signifie pour moi. \r\nJe décrirai -avec le niveau de détail souhaité par l'auditoire- comment je l'implémente à la maison comme au bureau. \r\nJe donnerai des exemples précis comme la mise en place d'un compost, le remplacement d'objets jetables courants par\r\ndes objets réutilisables ou comme des recettes simples de produits à faire soi-meme.\r\nJe souhaite en faire une session d'échange de trucs et astuces sur un sujet en vogue.\r\n",
+  "start": 1558018200000,
+  "end": 1558021500000,
+  "category": "Ateliers «On n'est pas que des codeurs»",
+  "place": "Ateliers «On n'est pas que des codeurs»",
+  "speakers": [
+   {
+    "name": "Marie-Francoise Lim",
+    "description": "Diplomée en Mathematiques et Informatique de l'université de Nice et en Génie Logiciel du Cerics de Sophia Antipolis, j'ai \r\ncommencé à travailler à Gentilly à ILOG alors petite startup issue de l'INRIA en 1990. J'y ai occupé les postes de developpeur \r\ndans les bibliothèques graphiques puis de consultante. J'ai choisi de venir travailler à Sophia Antipolis à la naissance de mon deuxieme enfant \r\ntoujours à ILOG en tant que développeur d'un environnement de developpement d'applications d'optimisations. ILOG a été achetée par IBM en 2009, je suis aujourd'hui ingénieur QA à IBM en charge des exemples et tutoriels de notre produit d'aide à la décision à base de règles métiers et mère de trois enfants. \r\nProche de la nature depuis mon enfance dans la vigne de ma grand-mère dans le Var, je suis depuis de nombreuses années dans une démarche \r\nzéro dechet, cela s'est concrétisé par mon adhésion à l'association Biot zéro dechet en juin 2018.",
+    "company": "IBM",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=587"   } 
+  ]
+ }, 
+ {
+  "name": "Set your performance biases on fire with FlameGraph and JMH",
+  "description": "Profiling and benchmarking are separate but complementary tools in the developer's Swiss Army knife and anything can just gone wrong twice with the many optimisations that a modern JVM can do. \"FlameGraph and JMH (Java Microbenchmark Harness) are sharp razors that need to be carefully handled to void being cut by: during the intervention a \"peek under the hood\" will be given to some JVM mechanisms to understand the reasons behind the failures of most well known profilers and will be presented a journey among (negative) benchmarking examples to learn how to do them right.",
+  "start": 1557921600000,
+  "end": 1557932400000,
+  "category": "Deep-Dive Conference 1",
+  "place": "Deep-Dive Conference 1",
+  "speakers": [
+   {
+    "name": "Francesco Nigro",
+    "description": "I have been working for 18 years in the computer field. In the last 15 years I have cultivated a strong passion in Java development, recently joined by C and ASM development on x86 / PowerPC platforms. A big fan of the DDD (Domain Driven Design) world, I have developed several Event-Sourced (and CQRS) high performance solutions in the medical and IoT field. I am an active member of various online communities on performance (https://groups.google.com/forum/#!forum/mechanical-sympathy) and Senior Software Engineer for Red Hat in the messaging field, specialized in performance-oriented development and testing.",
+    "company": "Red Hat",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=582",
+    "social": {
+     "twitterUrl": "http://twitter.com/forked_franz"
+    }   } 
+  ]
+ }, 
+ {
+  "name": "The Hitchhiker’s Guide to Diversity (Don't panic!)",
+  "description": "",
+  "start": 1557991200000,
+  "end": 1557993600000,
+  "category": "Conference 1",
+  "place": "Conference 1",
+  "speakers": [
+   {
+    "name": "Audrey Neveu",
+    "description": "Audrey est développeur full-stack. Passionnée par son métier, Audrey a toujours été fortement engagée dans la communauté Java au travers de plusieurs JUGs et conférences (Duchess France, Paris JUG, Devoxx France, Devoxx UK) mais aussi au sein d’initiatives visant à faire découvrir la programmation aux plus jeunes (Programatoo, Devoxx4Kids). Plus récemment elle a également rejoint l’équipe des Cast Codeurs.",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=573",
+    "social": {
+     "twitterUrl": "http://twitter.com/Audrey_Neveu"
+    }   } 
+  ]
+ }, 
+ {
+  "name": "Dessiner en CSS, c'est facile !",
+  "description": "Tout le monde connaît CSS, pour s’être arraché quelques cheveux en essayant d’aligner des éléments, rendre un site responsive ou juste pour essayer de rendre le côté front attractif. \r\n\r\nCSS ne sert pas uniquement à présenter correctement la partie front d’une webapp et il est possible de faire énormément de choses avec. \r\n\r\nJ’aimerais vous montrer comme dessiner en utilisant CSS.\r\n",
+  "start": 1558023600000,
+  "end": 1558025100000,
+  "category": "Conference 2",
+  "place": "Conference 2",
+  "speakers": [
+   {
+    "name": "Cécile HUI BON HOA",
+    "description": "Beginning my career as a back-end engineer, I then evolved into a fullstack developer allowing me to understand and master the data at each stage. Manipulating a large volume of data on a daily basis encouraged me to rely on data visualization to create adapted data views. Whether it is for storytelling presentation, a graphic support to convince or a personalized tool to manage information, I believe data visualization is now an essential step in the Big Data world.",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=588",
+    "social": {
+     "twitterUrl": "http://twitter.com/@CecileHbh"
+    }   } 
+  ]
+ }, 
+ {
+  "name": "What's the deal with Rubik's Cube?",
+  "description": "A notorious shape.\r\nA simple mathematical structure.\r\nA world of possibilities.\r\n\r\nRubik's Cube has been around for 45 years, and it's still the best all-around selling toy.\r\n\r\nCome and discover its secrets!\r\n* as an architecture geek: how is that shape even possible?\r\n* as a math geek: is group theory really as scary as it sounds?\r\n* as a parent: will your child stop crying if you unscramble it?\r\n* as a competitor: how can fast solving work at all?\r\n* as an artist: any twist (hah) on the puzzle?\r\n* as yourself: want to try?\r\n\r\nBring any unsolved twisty puzzle of yours if you've got some!",
+  "start": 1558101000000,
+  "end": 1558104000000,
+  "category": "Ateliers «On n'est pas que des codeurs»",
+  "place": "Ateliers «On n'est pas que des codeurs»",
+  "speakers": [
+   {
+    "name": "Jean-Baptiste Mazon",
+    "description": "I'll get to this.",
+    "company": "Amadeus",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=581",
+    "social": {
+     "twitterUrl": "http://twitter.com/jbmazon"
+    }   } 
+  ]
+ }, 
+ {
+  "name": "Créez votre première PWA en pur HTML/JS",
+  "description": "Le terme Progressive Web App (PWA) n'a sans doute pas échappé à toute personne qui suit l'actualité web. À quoi correspond ce terme et qu'apporte t-il à une application web ? Ce workshop vous permettra de mieux comprendre les PWA avec un peu de pratique 💪.\r\n\r\nNous allons ensemble transformer une application web classique en une PWA. Cela permettra à l'utilisateur de disposer d'un mode offline basique pour consulter l'application et de pouvoir l'ajouter en raccourci sur l'écran d'accueil de son smartphone.",
+  "start": 1557921600000,
+  "end": 1557932400000,
+  "category": "Workshop 2",
+  "place": "Workshop 2",
+  "speakers": [
+   {
+    "name": "Yassine Benabbas",
+    "description": "Développeur d’applications mobiles chez Worldline depuis 2011, également enseignant et docteur (en informatique). Je m’intéresse aux sujets mobiles et web mais j'aime bien toucher un peu à tout. Je programme avec passion depuis plus d'un dizaine d'années.",
+    "company": "Worldline",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=664",
+    "social": {
+     "twitterUrl": "http://twitter.com/yostane"
+    }   } 
+  ]
+ }, 
+ {
+  "name": "Be your own baker",
+  "description": "Seven years ago we started to occasionally prepare bread ourselves. We used a very simple recipe containing only a few ingredients. It did not require any kneading and was quite fast to prepare. Yes,  it used _dry yeast_.\r\n\r\nLater, we bought a bread machine and while we were still using _dry yeast_, kneading got involved along with a lot more ingredients. Once I told a friend of mine whose father is a baker in the North of France and he looked at me with a certain level of suspicion. Aurélien told me in bread, there should be no sugar. Flour, water and salt. That's all you need.\r\n\r\nHe was right. For the last two years, we are raising our own _sourdough_. Multiple types. Yes. We raise them. Like children. They are living creatures with their own characters.\r\n\r\nDifferent kinds of _sourdoughs_  give different special flavours for pastries. Flavours that you cannot achieve by using _dry yeast_. \r\n\r\nAt this small atelier, I will show how you can raise your own _sourdough_, you can __TASTE__ some bread and cakes and you will learn how to prepare them, you can copy my pastry!",
+  "start": 1558006200000,
+  "end": 1558009200000,
+  "category": "Ateliers «On n'est pas que des codeurs»",
+  "place": "Ateliers «On n'est pas que des codeurs»",
+  "speakers": [
+   {
+    "name": "Sandor DARGO",
+    "description": "Happy father of two. Blogger. Developer. Amateur of graph databases.",
+    "company": "Amadeus",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=598",
+    "social": {
+     "twitterUrl": "http://twitter.com/sandordargo"
+    }   } 
+  ]
+ }, 
+ {
+  "name": "Lock Picking",
+  "description": "Ever wondered how (door) locks work and how to defeat them? If yes, then this workshop is for you!\r\n\r\nAfter a short presentation, introducing the fundamentals of lock picking, participants will be able to try their luck on real locks.",
+  "start": 1558009800000,
+  "end": 1558012800000,
+  "category": "Ateliers «On n'est pas que des codeurs»",
+  "place": "Ateliers «On n'est pas que des codeurs»",
+  "speakers": [
+   {
+    "name": "Florian Loitsch",
+    "description": "",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=596"   } 
+  ]
+ }, 
+ {
+  "name": "Data science for developers",
+  "description": "The information age has led to influx of data, so, how do we take advantage of this? One term that is frequently used is ‘machine learning’. Machine learning techniques can support the development of intelligent applications for facial or speech recognition, pattern matching, fraud detection, driverless cars and many more. In this session I will attempt to show how Red Hat is bridging the gap between data scientists and developers, and, take you on my journey as a long term Java developer, to finding my feet as a data scientist. We will walk through the architecture design and implementation of my first OpenShift intelligent application. This will present the advantages and disadvantages of using microservice architectures with containers, specifically when combined with machine learning techniques. \r\n\r\nThe listener will come away with knowledge of:\r\n* Machine learning from the viewpoint of a developer.\r\n* Microservice architecture design.\r\n* Deploying your own intelligent application on OpenShift.\r\n\r\nThis session is aimed at anyone who wants to get to grips with data science and how to deploy a cloud native application. \r\n",
+  "start": 1558009800000,
+  "end": 1558012800000,
+  "category": "JUDCon Conference",
+  "place": "JUDCon Conference",
+  "speakers": [
+   {
+    "name": "Rebecca Simmonds",
+    "description": "Rebecca Simmonds is a senior software engineer at Red Hat. Here she is part of an emerging technology group, which comprises of both data scientists and developers. She completed a PhD at Newcastle University, in which she developed a platform for scalable, geospatial and temporal analysis of the Twitter data. After this she moved to a small startup company as a Java developer creating solutions to improve performance for a CV analyser. She has a keen interest in architecture design and data analysis, which she is furthering at Red Hat with OpenShift and ML research.\r\n",
+    "company": "Red Hat",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=536",
+    "social": {
+     "twitterUrl": "http://twitter.com/becky_simmonds"
+    }   } 
+  ]
+ }, 
+ {
+  "name": "Le futur de la gestion des dépendances Node",
+  "description": "# Présentation\r\nLe 13 septembre 2018 un thread twitter a été partagé par **Maël Nison** : yarn ne va plus avoir besoin de node_modules !\r\nLa déferlante de réponses, likes et retweet confirment une chose : les node_modules ne sont pas appréciés par la communauté.\r\n\r\n**Kat Marchán** (développeuse npm) n'a pas tardé à répondre, elle aussi a eu la même idée mais sa solution est différente !\r\n\r\nCreusons ensemble les raisons de cet engouement, et voyons quels sont les grandes stratégies mises en place par les grands !\r\n\r\n![](https://i.imgur.com/hhbntkZ.png)  ![](https://i.imgur.com/BVi7EOZ.png)\r\n\r\n# Plan\r\n- Quel est le problème avec les node_modules ?\r\n- Comment résoudre ces soucis ?\r\n   * pnpm\r\n   * monorepo\r\n   * node\\_modules racine ? _troll_\r\n   * La solution yarn\r\n   * La solution npm\r\n- Et la production ?\r\n- L'état actuel",
+  "start": 1558104600000,
+  "end": 1558106100000,
+  "category": "Conference 2",
+  "place": "Conference 2",
+  "speakers": [
+   {
+    "name": "Fabien JUIF",
+    "description": "",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=591",
+    "social": {
+     "twitterUrl": "http://twitter.com/fabienjuif"
+    }   } 
+  ]
+ }, 
+ {
+  "name": "Tensorflow, there is no spoon",
+  "description": "With the advance in Artificial Intelligence, neural networks are everywhere! But like all technologies, it has its flaws. Adversarial examples are able to fool neural networks used for critical applications such as self-driving cars, face recognition apps, security cameras... Together, we will see how to generate your own adversarial images and fool a neural network into seeing things that are not there. We'll also see how to defend against adversarial attacks.\r\nNo Tensorflow, there is no spoon!",
+  "start": 1557994800000,
+  "end": 1557997800000,
+  "category": "Conference 1",
+  "place": "Conference 1",
+  "speakers": [
+   {
+    "name": "Tiffany Souterre",
+    "description": "I love science and I love data! After finishing a PhD in genetic engineering, I continued my quest for discovering new patterns through data science and machine learning. I currently work as a Data Scientist and I play with machine learning algorithms on my free time. Someday, I wish to leverage artificial intelligence and genetics to improve people's life.",
+    "company": "JEMS group",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=592",
+    "social": {
+     "twitterUrl": "http://twitter.com/tiffanysouterre"
+    }   } 
+  ]
+ }, 
+ {
+  "name": "Choisir entre une API RPC, SOAP, REST, GraphQL? Et si le problème était ailleurs ?",
+  "description": "Posons-nous et profitons de ce talk pour prendre un peu de hauteur sur l'état de l'industrie tech autour de la création d'API de persistence (CRUD).\r\n\r\nD'où venons-nous, ou allons-nous ? Pourquoi le choix entre RPC, SOAP, REST et GraphQL n'est peut-être qu'un sujet de surface qui cache un problème bien plus profond.",
+  "start": 1558096200000,
+  "end": 1558099200000,
+  "category": "Conference 1",
+  "place": "Conference 1",
+  "speakers": [
+   {
+    "name": "Francois-Guillaume Ribreau",
+    "description": "Architect & Head of Digital Development @OuestFrance🌟 #FullStack CTO @imagecharts @Redsmin @motiondynamic_ @mailpopin founder🚀 Trainer @EPSI_Nantes @UnivNantes",
+    "company": "Ouest France",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=601",
+    "social": {
+     "twitterUrl": "http://twitter.com/fgribreau"
+    }   } 
+  ]
+ }, 
+ {
+  "name": "Architecture Decision Records : enfin une documentation qui vous ressemble !",
+  "description": "Vous aimez écrire de la doc ? Pas moi.\r\nOn a pourtant tous besoin de conserver un historique des décisions prises sur un projet...\r\nDans ce talk, venez découvrir les ADRs et apprenez à garder une trace de tous vos choix d'architecture et de design sans vous prendre la tête !",
+  "start": 1558018200000,
+  "end": 1558019700000,
+  "category": "Conference 1",
+  "place": "Conference 1",
+  "speakers": [
+   {
+    "name": "Olivier Revial",
+    "description": "",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=600"   } 
+  ]
+ }, 
+ {
+  "name": "Web components en 2019, on en est où ?",
+  "description": "Depuis quelques années on a entendu parler des  web components, ce beau discours d'un développement \r\n  web basé enfin sur une vraie architecture en composants, de la réutilisation, de la modularisation, \r\n  de l'encapsulation... \r\n\r\n  Mais force est de constater que aujourd'hui, en fin 2018, cette vision a du mal à se concrétiser,\r\n  les frameworks comme React, Angular ou Vue ont encore la part belle des feux des projecteurs et \r\n  le discours des web components sont presque inaudibles. \r\n\r\n  Et pourtant plein de choses se sont passées cette dernière année, et les web components sont \r\n  aujourd'hui sur plein de sites et des applications que nous utilisons tous les jours, sans qu'on les\r\n  remarque. La révolution est bien en marche, mais elle est plutôt silencieuse...\r\n\r\n  Dans ce talk on va commencer par faire un tour de table sur les différentes bibliothèques de \r\n  web components disponibles aujourd'hui, leurs caractéristiques, leur philosophie et leurs use cases.\r\n  \r\n  Ensuite on va se centrer sur le futur de mon projet favorite : Polymer. La v3 est sortie il y \r\n  a quelques mois, et en plus de mettre enfin l'outillage en phase avec les standards du marché (npm...)\r\n  elle nous annonce un beau futur avec des composants plus légers, plus performants, plus proches de \r\n  la plateforme et avec un rendering basé sur vrai concurrent de JSX mais qui s'intègre 100% sur les\r\n  standards du web : lit-html. On parlera donc de LitElement, on fera des demos, on verra du code...\r\n\r\n  Pour finir on va voir comment il est simple aujourd'hui d'intégrer les web components sur n'importe\r\n  quel project web, du legacy avec jQuery à la dernière app avec React, du projet en Angular à l'application\r\n  en Vue JS. Des composants interopérables plug and play pour vos applications qui montrent encore\r\n  une fois l'intérêt de cette révolution des web components.",
+  "start": 1557903600000,
+  "end": 1557914400000,
+  "category": "Deep-Dive Conference 2",
+  "place": "Deep-Dive Conference 2",
+  "speakers": [
+   {
+    "name": "Horacio Gonzalez",
+    "description": "Malgré ce que son accent espagnol bien prononcé peut suggérer, Horacio est arrivé en France il y a plus d'une quinzaine d'années. Passionné d'informatique, dans laquelle il est tombé depuis tout petit, il a découvert le développement web en 1997 et depuis il n'a pas arrêté de bosser autour.\r\n\r\nAprès quelques années comme tech leader de la partie frontend de @warp10io chez Cityzen Data, Horacio a rejoint OVH en tant que Developer Advocate. Il est cofondateur du FinistDevs et organisateur du DevFest du Bout du Monde, le DevFest français le plus proche de la Silicon Valley.\r\n\r\nPassionné par le développement web et tout ce qui gravite autour des composants web, Horacio est Google Developer Expert (GDE) en Web Technologies et Polymer.",
+    "company": "OVH",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=568"   } 
+  ]
+ }, 
+ {
+  "name": "Event loop et asynchronisme en JavaScript",
+  "description": "Sans utilisation des web workers, JavaScript est un langage monothread, qui offre toutefois la possibilité d'exécuter du code de manière asynchrone.\r\n\r\nA travers une exploration du fonctionnement de la stack, des diverses queues et de l'event loop, ce quickie sera l'occasion de mieux comprendre le fonctionnement et les limitations de cette gestion l'asynchronisme en JS.",
+  "start": 1558020000000,
+  "end": 1558021500000,
+  "category": "Conference 2",
+  "place": "Conference 2",
+  "speakers": [
+   {
+    "name": "Benjamin Cavy",
+    "description": "Benjamin est développeur full-stack à la MAIF. Il s’intéresse en ce moment particulièrement à l’écosystème JavaScript : reactjs, vuejs…\r\n",
+    "company": "MAIF",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=599"   } 
+  ]
+ }, 
+ {
+  "name": "Micronaut, le framework JVM ultra-light du futur",
+  "description": "Temps de démarrage proche de la seconde, empreinte mémoire de 10 MB, pas de réflection, approche orientée \"cloud native\" : autant de caractéristiques qui font du framework Micronaut le compagnon idéal  de développement de vos microservices Java/Kotlin.\r\n",
+  "start": 1558023600000,
+  "end": 1558025100000,
+  "category": "Conference 1",
+  "place": "Conference 1",
+  "speakers": [
+   {
+    "name": "Olivier Revial",
+    "description": "",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=600"   } 
+  ]
+ }, 
+ {
+  "name": "Comprendre les GC basses latences",
+  "description": "Depuis quelques années, le monde du GC sur la JVM évolue. Une nouvelle catégorie de GC émerge: Les GC basses latences (low latency). Shenandoah est mis à disposition par Red Hat, Oracle a mis en open Source ZGC dans l'OpenJDK depuis le JDK 11 et Azul C4 est toujours là.\r\n\r\nComme les GC \"classiques\" sont plutôt bien compris maintenant, cette présentation s'attardera sur les arcanes des plus récents. Nous allons expliquer le concurrent marking (tri-color marking), la Load Value Barrier de C4, les Brooks pointers de Shenandoah et le multi-mapping de ZGC. Au final, comment choisir un GC basse latence ?\r\n",
+  "start": 1558006200000,
+  "end": 1558009200000,
+  "category": "Conference 1",
+  "place": "Conference 1",
+  "speakers": [
+   {
+    "name": "Jean-Philippe BEMPEL",
+    "description": "Développeur passionné par les performances, les runtimes (JVM, CLR) et adepte de Mechanical Sympathy, Jean-Philippe Bempel a plus de 8 ans d'expérience dans les systèmes de trading low latency. Maintenant il apporte son expertise sur la JVM chez Criteo afin d'optimiser les resources sur des clusters d'applications de plusieurs milliers de noeuds.",
+    "company": "Criteo",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=602",
+    "social": {
+     "twitterUrl": "http://twitter.com/jpbempel"
+    }   } 
+  ]
+ }, 
+ {
+  "name": "Practical intro to web performance",
+  "description": "Web performance is a hot and heavily evangelized topic those days, though still not always incorporated into daily work of the web development teams.\r\n(By \"web performance\", I loosely mean making sure that the experience _is faster_ and _feels faster_ and more smooth to the user.)\r\n\r\nThere are many reasons for that:\r\n\r\n- shipping features having a higher priority than the performance\r\n- web performance might be perceived as an overwhelming and mysterious topic, with lots of knowledge required to get started\r\n- it might not be clear what tools are available, and how to use them to debug the performance problems\r\n- web browsers, web APIs and the way the web applications are built are changing fast, and it's hard to catch up with all of that\r\n\r\nThe idea of the talk is to:\r\n\r\n- show what are the available tools (WebPageTest, Lighthouse, Chrome DevTools) and browser APIs to investigate web performance, how to use them, and what are the gotchas\r\n- present how to read and interpret the network waterfall, including differences between HTTP/1 and HTTP/2\r\n- outline techniques and best practices on how to approach the performance problems\r\n- apply scientific approach: how to measure whether the work done has resulted in improvements\r\n- briefly talk about how to use JavaScript tooling (webpack, babel, bundlephobia etc.) to improve on some perf problems\r\n\r\nThing I will _not_ talk about:\r\n\r\n- digging into the details of all the possible performance improvements \r\n\r\nI.e.: giving the fishing rod, not the fish.",
+  "start": 1558084200000,
+  "end": 1558087200000,
+  "category": "Conference 2",
+  "place": "Conference 2",
+  "speakers": [
+   {
+    "name": "Jakub Gieryluk",
+    "description": "Web & mobile developer. Previously at Amadeus (2012-2017), currently at Dailymotion, working on web perf problematics.",
+    "company": "Dailymotion",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=575",
+    "social": {
+     "twitterUrl": "http://twitter.com//__jakub_g"
+    }   } 
+  ]
+ }, 
+ {
+  "name": "Fallacies of Doom - Lessons learned from porting Doom 3 to Java",
+  "description": "While Java has grown enormously over the years, the fundamentals have stagnated.\r\n\r\nThe motivation for this talk and underlying project, was the following question: why is Java, with it’s 20 years of age, and (at least)6 billion running JVM’s not a major player in the video-game development universe?\r\n\r\n#####TL;DR;\r\nSo everybody knows the Doom games, right? Every new installment brought brand new ideas, and groundbreaking graphics. But more importantly, it brought the source code of the prior installment to the public eye.\r\n\r\nNaturally people have played and hacked the code to oblivion, as much as they played the games themselves. And I have the honor to be one of those people.\r\n\r\nI (naively) endeavored to port the Doom 3 C++ code to our fantabulous Java. In doing so, I hoped to learn, among other things, more about 3D graphics.\r\n...what I didn't expect though, was for djoom3(cool name huh!) to teach me more about Java!?\r\n\r\nAside from the basic game development intro, this talk focuses on the following:\r\n- Some areas where Java should learn from it's nemesis, C++\r\n- Other areas where the student(Java) becomes the master(C++)\r\n- And some promises that were made, but never kept",
+  "start": 1558014600000,
+  "end": 1558017600000,
+  "category": "Conference 1",
+  "place": "Conference 1",
+  "speakers": [
+   {
+    "name": "Mahmoud Abdelghany",
+    "description": "The speaker has been your run of the mill consultant for over a decade now. He had/has the privilege of working for numerous industries ranging from airlines to the financial sector. \r\n\r\nIn the rest of his waking hours, he tinkers around with games and emulators. Most recently, he spent about 4 years on the djoom3 project, and reaffirms that he's learned more in those 4 years than his whole career.",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=580",
+    "social": {
+     "twitterUrl": "http://twitter.com/blackbeard0x14e"
+    }   } 
+  ]
+ }, 
+ {
+  "name": "Sous le capot des conteneurs Linux",
+  "description": "Aujourd’hui, beaucoup d’architectures cloud se reposent sur des technologies de conteneurs Linux (docker, lxc, rkt, …). Au delà des choix des technologies, qu’est-ce qu’un conteneur Linux en lui-même ? Peut-on le comparer à une VM light ? En créant soi-même un conteneur Linux, on comprend mieux cette technologie .\r\n\r\nContenu de la présentation:\r\n\r\nExpliquer les fonctionnalités du noyau: cgroups, namespace, ulimits utilisés pour créer un conteneur et limiter ses ressources.\r\n\r\n- Construire un micro conteneur linux from scracth.\r\n\r\n- Montrer les dernières features des conteneurs linux (e.g. user namespace)\r\n\r\n- Une digression sur leur évolution par rapport aux unikernels.",
+  "start": 1558092600000,
+  "end": 1558095600000,
+  "category": "Conference 2",
+  "place": "Conference 2",
+  "speakers": [
+   {
+    "name": "Alessio Coltellacci",
+    "description": "System developer at Clever Cloud.",
+    "company": "Clever Cloud",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=578",
+    "social": {
+     "twitterUrl": "http://twitter.com/lightplay8"
+    }   } 
+  ]
+ }, 
+ {
+  "name": "Atelier MongoDB Atlas et MongoDB Stitch",
+  "description": "Rejoignez moi pour 3h de travaux pratiques sur MongoDB Atlas et MongoDB Stitch. Je commencerai par vous faire une démo de ce qu'on peut faire avec ces outils et ensuite ça sera à vous de déployer vos serveurs MongoDB dans le cloud grace à MongoDB Atlas puis de créer votre API REST avec l'aide de MongoDB Stitch... Mais vous verrez qu'on peut faire bien plus qu'une API REST et nous verrons qui aura le plus d'imagination ! Tous les participants auront un code d'une valeur de $100 pour jouer avec MongoDB Atlas et MongoDB Stitch mais la version gratuite de ses outils suffira largement pour 3h de bricolage.",
+  "start": 1557903600000,
+  "end": 1557914400000,
+  "category": "Workshop 3",
+  "place": "Workshop 3",
+  "speakers": [
+   {
+    "name": "Maxime Beugnet",
+    "description": "Maxime travaille avec MongoDB depuis 5 ans et dans l'informatique depuis 8 ans. Il est formateur MongoDB et Java avec les certifications DEV et DBA de MongoDB. Maxime a rejoint MongoDB en février 2018 en tant qu'évangéliste technique EMEA pour partager son expérience avec la communauté. Il aime le code propre, la plongée sous-marine, les compétitions d'algorithmie et les vikings !",
+    "company": "MongoDB",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=666",
+    "social": {
+     "twitterUrl": "http://twitter.com/MBeugnet"
+    }   } 
+  ]
+ }, 
+ {
+  "name": "Les 10 mauvaises façons de faire de l’intelligence artificielle",
+  "description": "L’intelligence artificielle donne des résultats et il faut lancer des projets ; mais pas n’importe comment. Les entreprises veulent être en avance par rapport à la compétition, mais ils oublient que l’intelligence artificielle est une technologie et non pas une fin en soi.\r\n\r\nLes développeurs, les mathématiciens, les ingénieurs, les managers veulent tous faire de la data science parce que c’est nouveau et intéressant, mais il ne faut pas oublier qu’il s’agit d’années de formation et de travail pour passer que 20% de son temps à faire des modèles.\r\n\r\nDans ce talk on regardera 10 mauvaises façons de traiter le sujet de l’intelligence artificielle en essayant de trouver les approches ayant des meilleures chances de réussite.",
+  "start": 1558018200000,
+  "end": 1558019700000,
+  "category": "Conference 2",
+  "place": "Conference 2",
+  "speakers": [
+   {
+    "name": "Andreea Dumitrascu",
+    "description": "Consultate et responsable IA @Zenika\r\n\r\nAndreea est développeur, formateur et responsable de l’Intelligence artificielle chez Zenika. Elle accompagne les entreprises dans la conception et la réalisation de leur projets d’intelligence artificielle. \r\n\r\nAvant de rejoindre le monde de la technique, elle a travaillé en communication et a un diplôme en linguistique. \r\n\r\nSon crédo : *Innover c’est utiliser les technologies d’aujourd’hui pour créer les solutions de demain.*\r\n\r\n[Full bio](https://www.linkedin.com/in/andreeadumitrascu/)",
+    "company": "Zenika",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=593",
+    "social": {
+     "twitterUrl": "http://twitter.com/eigidi"
+    }   } 
+  ]
+ }, 
+ {
+  "name": "GraphQL in Java World",
+  "description": "Join me in this workshop, while I take you into magical world of GraphQL, \"new\" way of building cool and responsive API's.\r\n\r\nI will show and explain to you what GraphQL is, how we can build GraphQL API in good old Java, when and why you should use GraphQL, and also when and where not to use GraphQL.\r\n\r\nCome seeking knowledge, and you will leave this workshop with new tricks in your bag and great knowledge of GraphQL",
+  "start": 1557921600000,
+  "end": 1557932400000,
+  "category": "Workshop 3",
+  "place": "Workshop 3",
+  "speakers": [
+   {
+    "name": "Vladimir Dejanovic",
+    "description": "Founder and leader of AmsterdamJUG JavaOne Rockstar Speaker CodeOne Star Speaker\r\n\r\nIT Consultant, Software Architect, Team Lead and Chapter Lead working in industry since 2006 developing high performance software in multiple programming languages and technologies from desktop to mobile and web with high load traffic.\r\n\r\nEnjoining developing software mostly in Java and JavaScript, however also wrote fair share of code in Scala, C++, C, PHP, Go, Objective-C, Python, R, Lisp and many others.\r\n\r\nAlways interested in cool new stuff, Free and Open Source software.\r\n",
+    "company": "Amsterdam JUG ",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=668",
+    "social": {
+     "twitterUrl": "http://twitter.com/@VladimirD_42"
+    }   } 
+  ]
+ }, 
+ {
+  "name": "Entre deux sessions de debug, relaxez-vous en faisant du yoga",
+  "description": "Le yoga, ce n’est pas pas que des jolies filles dans des positions improbables !\r\n\r\nSi vous n’arrivez plus à vous concentrer, si vous avez le cou tendu, la tête lourde, les épaules crispées, le dos en vrac, les jambes engourdies à force de rester assis devant un ordinateur, venez tester un cours de yoga !\r\n\r\nSoulagez vos maux, offrez vous un moment de détente.\r\n\r\nMax: 15 participants.",
+  "start": 1558014600000,
+  "end": 1558017600000,
+  "category": "Ateliers «On n'est pas que des codeurs»",
+  "place": "Ateliers «On n'est pas que des codeurs»",
+  "speakers": [
+   {
+    "name": "Mélanie Passoni",
+    "description": "Mélanie Passoni est infirmière au centre hospitalier de Grasse et professeur de yoga.\r\n\r\nFérue de yoga qu’elle pratique depuis plusieurs années elle l’enseigne après 4 ans d’études et un voyage en Inde. Elle donne des cours dans un centre de bien-être (Terre d’Eveil) et également à des personnes atteintes de maladies respiratoires à l’hôpital.",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=688"   } 
+  ]
+ }, 
+ {
+  "name": "Découvrez la cuisine autour de la truffe",
+  "description": "nous cuisinerons en binômes devant les participants (4 à 5 recettes), il est possible de faire participer également quelques personnes qui viennent cuisiner avec moi selon l'ambiance.\r\n\r\nAdam, professionnel de la truffe et propriétaire de l'entreprise familiale DOMAINE D'ARGENS à DRAGUIGNAN répondra à toutes les questions sur le sujet et animera cet atelier (il est né le nez dans la truffe et est très très passionné), quant à moi, passionnée de cuisine et de bons produits, je serai là pour expliquer mes gestes et les associations de saveurs.\r\n\r\nMax: 25 participants.\r\n",
+  "start": 1557998400000,
+  "end": 1558001400000,
+  "category": "Ateliers «On n'est pas que des codeurs»",
+  "place": "Ateliers «On n'est pas que des codeurs»",
+  "speakers": [
+   {
+    "name": "Sarah Quaranta",
+    "description": "Dans sa petite cuisine elle fait des bons petits plats.\r\n\r\nCélèbre blogueuse culinaire.\r\n\r\n",
+    "company": "Sarahtatouille",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=684"   }, 
+   {
+    "name": "Adam Edicoffer",
+    "description": "Notre Maison a bâti sa notoriété au fil de plus de vingt cinq années d’expérience, plus que son savoir faire, c’est sa philosophie de l’exception qui lui a permis de devenir un acteur incontournable dans cet univers fascinant de la Truffe, véritable Diamant noir de la Gastronomie.\r\n\r\nDOMAINE D’ARGENS, aujourd’hui distribué dans le monde entier, se positionne comme un véritable spécialiste en Produits d’exception, depuis le premier jour nous partageons nos Valeurs avec celles et ceux qui comme nous sont animés par le Goût du «Beau» et du «Bon».\r\n\r\nNous n’avons de cesse de mettre à profit toute notre Passion et notre savoir faire au service de la Gastronomie, nous intervenons de l’élevage au cavage, de la création aux Produits finis en notre qualité d’experts de la Truffe depuis le Sud de la France, sur nos terres Varoises, où nous sommes installés depuis 1987.\r\n\r\nL’Ethique et la Passion qui nous animent sont un gage de Qualité Digne de Confiance…\r\n\r\n",
+    "company": "Domaine d'Argens",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=685"   } 
+  ]
+ }, 
+ {
+  "name": "Pixel Art en perles Hama",
+  "description": "Avant la HD, on faisait déjà de l'art en basse résolution et avec 8 couleurs ! Venez plonger ou replonger dans le Pixel Art, en reproduisant les sprites 8 bits ou 16 bits de votre jeunesse avec des perles Hama.\r\n\r\nMax: 15 participants.\r\n",
+  "start": 1558080600000,
+  "end": 1558083600000,
+  "category": "Ateliers «On n'est pas que des codeurs»",
+  "place": "Ateliers «On n'est pas que des codeurs»",
+  "speakers": [
+   {
+    "name": "Alexis Bietti",
+    "description": "Codeur, bassiste, gamer.",
+    "company": "Wall Street Systems",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=686"   }, 
+   {
+    "name": "Damien Ciabrini",
+    "description": "Damien travaille sur le projet OpenStack, dans l'infrastructure et la haute disponibilité. Il est mainteneur de Galera, le moteur de réplication synchrone pour MySQL.\r\n\r\nIl a grandit à l'époque des Amigas, de la demoscene et du pixel art. Aujourd'hui, il programme toujours à temps perdu sur du vieux hardware 68000.",
+    "company": "Red Hat",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=687",
+    "profilUrl": "http://damien.ciabrini.name",
+    "social": {
+     "twitterUrl": "http://twitter.com/dciabrin"
+    }   } 
+  ]
+ }, 
+ {
+  "name": "Monitoring OVH: 300k serveurs, 27 DCs une plateforme de métriques",
+  "description": "Comment faire quand on doit faire le suivi de toute l’infrastructure du plus grand fournisseur de cloud Européen ? Comment choisir un outil quand les plus populaires ne tient pas la marée à cette échèle ? Comment construire une plateforme Metrics pour unifier, concilier et remplacer des années de legacy fragmenté et des solutions partielles ?\r\n\r\nDans ce talk nous racontons notre expérience sur la construction et la maintenance d’OVH Metrics, la plateforme utilisée pour monitorer toute l’infrastructure OVH. Nous avions besoin d’aller à des endroits ou la plupart de solutions de monitoring ne sont jamais allées, opérer à l’échelle du plus grand fournisseur Européen de cloud et hosting : 27 data centers, plus de 300k serveurs (physiques !) et des centaines de produits pour accomplir notre mission avec nos 1,3 millions de clients.\r\n\r\nVenez pour entendre cette histoire de séries temporelles, de solutions open-sources poussées à l’extreme, de clusters HBase opérés en limite de capacité, et de comment une petite équipe s’est appuyé sur une poignée de solutions open-source et une bonne dose de code maison pour construire une des solutions de monitoring les plus performantes au monde.",
+  "start": 1557998400000,
+  "end": 1558001400000,
+  "category": "Conference 1",
+  "place": "Conference 1",
+  "speakers": [
+   {
+    "name": "Pierre Zemb",
+    "description": "[Pierre Zemb](https://pierrezemb.fr) is a infrastructure engineer at [OVH](https://www.ovh.com). He’s working with the [Metrics Data Platform](https://www.ovh.com/fr/data-platforms/metrics/) team to build reliable distributed systems and analytics solution. He's also giving a hand to differents local events, such as the local Devoxx4Kids, JUG/GDG and DevFest.",
+    "company": "OVH",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=567",
+    "social": {
+     "twitterUrl": "http://twitter.com/PierreZ"
+    }   }, 
+   {
+    "name": "Horacio Gonzalez",
+    "description": "Malgré ce que son accent espagnol bien prononcé peut suggérer, Horacio est arrivé en France il y a plus d'une quinzaine d'années. Passionné d'informatique, dans laquelle il est tombé depuis tout petit, il a découvert le développement web en 1997 et depuis il n'a pas arrêté de bosser autour.\r\n\r\nAprès quelques années comme tech leader de la partie frontend de @warp10io chez Cityzen Data, Horacio a rejoint OVH en tant que Developer Advocate. Il est cofondateur du FinistDevs et organisateur du DevFest du Bout du Monde, le DevFest français le plus proche de la Silicon Valley.\r\n\r\nPassionné par le développement web et tout ce qui gravite autour des composants web, Horacio est Google Developer Expert (GDE) en Web Technologies et Polymer.",
+    "company": "OVH",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=568"   } 
+  ]
+ }, 
+ {
+  "name": "Devenez accessible !",
+  "description": "Empathie, bienveillance, inclusivité : se recentrer sur l’humain est devenu le nouveau credo du monde de la tech. Il me semble donc cohérent de prendre en compte l’accessibilité numérique dans cette transformation. Mais parlons franchement. Quand vient le moment de développer, qu’on soit convaincu ou non par l’accessibilité, on pense souvent (moi la première) : “mon client cible n’est pas concerné” ou “je n’ai pas le temps pour ça”. Je me lance donc un défi : vous convaincre que l’accessibilité numérique est importante et finalement pas si compliqué à mettre en place !",
+  "start": 1558006200000,
+  "end": 1558009200000,
+  "category": "Conference 2",
+  "place": "Conference 2",
+  "speakers": [
+   {
+    "name": "Delphine Millet",
+    "description": "Attirée à la fois par le design et la programmation, c’est tout naturellement que Delphine s’est orientée vers le développement front-end. Toujours avide de nouveauté, l’écosystème Javascript est pour elle une source de découverte permanente ! Développeuse front-end, son framework de prédilection est React. Elle accorde une importance particulière à la qualité, au design, à l'expérience utilisateur et à l'accessibilité.",
+    "company": "Zenika",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=661",
+    "social": {
+     "twitterUrl": "http://twitter.com/@MilletDelphine"
+    }   } 
+  ]
+ }, 
+ {
+  "name": "DevOps in a Serverless World",
+  "description": "DevOps isn’t going away with serverless, it’s actually becoming even more important with CI/CD and blue/green deployments remaining key best practices.\r\n\r\nIn this session we’ll discuss the importance of proper DevOps principles (SRE at Google), the challenges with serverless and microservices, and demonstrate Application Performance Monitoring (APM) tooling for serverless development.",
+  "start": 1558101000000,
+  "end": 1558104000000,
+  "category": "Conference 1",
+  "place": "Conference 1",
+  "speakers": [
+   {
+    "name": "Alexis Moussine-Pouchkine",
+    "description": "Google Cloud Developer Relations. Open Cloud, Strong Communities. Also, Java/Sun veteran.",
+    "company": "Google",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=659",
+    "social": {
+     "twitterUrl": "http://twitter.com/@alexismp"
+    }   } 
+  ]
+ }, 
+ {
+  "name": "Des microservices aux migroservices",
+  "description": "Ca y est, vous avez enfin la possibilité de démarrer un nouveau projet ou de migrer un de vos anciens monolithes et vous décidez de partir en architecture microservices !    \r\nOn se répartit les services, on sort nos plus belles technos et c'est parti ! Au pire, vu qu'on va faire un microservice on pourra le remplacer plus tard facilement :grinning:.   \r\n  \r\nPlus on avance dans la réalisation du service, plus les soucis commencent à apparaitre :   \r\n - Couplage avec d'autres services  \r\n - Partages de données  \r\n - Difficulté à étre déployés/opérés  \r\n - Ownership des services  \r\n - ...  \r\n   \r\nNotre microservice vient d'évoluer en migroservice ! :disappointed:   \r\nOn s'est trompé dans la recette et ajouté une bonne grosse de monolithe à note microservice ...  \r\n\r\nEssayons de voir comment nous en sommes arrivés là, les pièges a éviter et si ce n'est pas, finalement, qu'une étape vers une architecture microservice.  ",
+  "start": 1558084200000,
+  "end": 1558087200000,
+  "category": "Conference 1",
+  "place": "Conference 1",
+  "speakers": [
+   {
+    "name": "Francois Teychene",
+    "description": "Cloud Developper @ Saagie , meetup addict & organiser @ Montpellier,  SunnyTech team.  \r\nDéveloppeur couteau suisse pouvant intervenir du Javascript à la table de routage. Mes passions actuelles sont le Rust, le DevOps et le Scala en plus de vouloir mettre des conteneurs partout.",
+    "company": "Saagie",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=564",
+    "social": {
+     "twitterUrl": "http://twitter.com/fteychene"
+    }   } 
+  ]
+ }, 
+ {
+  "name": "Ce que j'ai appris en participant au benchmark HTTP TechEmpower",
+  "description": "Le benchmark [TechEmpower](https://www.techempower.com/benchmarks/) compare plus de 200 frameworks web écrits dans différents languages. La compétition est féroce et tout le monde veut être le premier!\r\n\r\nEclipse Vert.x est un boite à outil populaire pour écrire des applications réactives sur la JVM, reconnu pour sa scalabilité et qui participe à cette compétition depuis de nombreuses années.\r\n\r\nLes benchmarks de performances sont souvent utilisés pour comparer des serveurs HTTP ou des frameworks web ainsi que pour faire un choix. Nous étudierons ce que ces benchmarks veulent dire et mesurent vraiment.\r\n\r\nCette présentation révèlera les secrets de fabrication de Vert.x qui ont un impact direct sur ces benchmarks, depuis l'optimisations réseaux jusqu'au compilateur à la volée de bytecode de la JVM.",
+  "start": 1558092600000,
+  "end": 1558095600000,
+  "category": "JUDCon Conference",
+  "place": "JUDCon Conference",
+  "speakers": [
+   {
+    "name": "Julien Viet",
+    "description": "Julien Viet is the Vert.x project lead and works at Red Hat. Julien has been developing open source software since 2002. Julien holds an engineering degree from Institut National des Télécommunications.",
+    "company": "Red Hat",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=561",
+    "social": {
+     "twitterUrl": "http://twitter.com/julienviet"
+    }   } 
+  ]
+ }, 
+ {
+  "name": "Doom, gloom or loom",
+  "description": "La programmation réactive c'est cool, mais on va pas se mentir, le modèle des servlets, c'est quand plus simple à utiliser.\r\n  Je sais qu'en tant que devs ont à tous une petite tendance au masochisme, mais ça serait quand même mieux si on avait une API pour faire des appels bloquants qui bloqueraient pas vraiment l'appli en réalité, c'est exactement l'idée du projet Loom.\r\n  Donc dans ce talk, je vais vous faire une grosse démo du projet Loom, en explicant les différents modèles de co-routines ou pourquoi Java s'oriente vers un modèle à base de continations et de fibers, plutot que vers le async/await de Kotlin ou C#.   ",
+  "start": 1558009800000,
+  "end": 1558012800000,
+  "category": "Conference 1",
+  "place": "Conference 1",
+  "speakers": [
+   {
+    "name": "Rémi Forax",
+    "description": "Tombé dans le Java quand il était tous petit. A pas tant grandi que cela depuis, mais j'ai eu la chance de pouvoir apporter ma pierre au design de invokedynamic pour Java 7, des lambdas pour Java 8, des modules pour Java 9. J'ai été nommé Java Champion récemment, je sais trop ce que cela veut dire mais je trouve cela assez cool !",
+    "company": "Université de Marne la Vallée",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=654",
+    "social": {
+     "twitterUrl": "http://twitter.com/RemiForaxOff"
+    }   } 
+  ]
+ }, 
+ {
+  "name": "Survival Guide ... From 0 to 10 years in Software Development ",
+  "description": "# Survival Guide ... From 0 to 10 years in Software Development \r\n\r\nReaching 10 years in the Software Development industry is a  kind of milestone. I think it's the right time to have a look in the review mirror : \r\n- What were the **right** decisions?\r\n- What career **mistake** did I made?  \r\n\r\nIf I could go back in the past, what are the useful hints I could give to the 2006's myself?\r\n\r\nWhy this talk? Of course, I can't go back in the past but I would love to give those few hints to beginners or to the junior software developers. I  could also compare my point of view with senior developers that went through the same path.  ",
+  "start": 1558021800000,
+  "end": 1558023300000,
+  "category": "Conference 1",
+  "place": "Conference 1",
+  "speakers": [
+   {
+    "name": "Jeremy Passeron",
+    "description": "Lead Platform Engineer at Symphony - \r\nPassionate Software Dev on the French Riviera Since 2006",
+    "company": "Symphony",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=566",
+    "social": {
+     "twitterUrl": "http://twitter.com/jeremp"
+    }   } 
+  ]
+ }, 
+ {
+  "name": "Docker, Kubernetes & Istio : Tips, tricks & tools",
+  "description": "Il ne fait aucun doute que Docker et Kubernetes sont omniprésents dans le nouveau monde des microservices. Mais l'utilisation quotidienne peut être assez tricky.\r\nSouhaitez-vous pouvoir créer des images plus petites, plus sûres et plus rapides à compiler ?\r\nAvez-vous des difficultés avec les descripteurs Kubernetes YAML et les lignes de commande sans fin ?\r\nQuand tout va mal, comment déboguez-vous un conteneur ? Et plusieurs pods ?\r\nSouhaitez vous connaître des petits tips et outils pratiques ?\r\nVous êtes-vous demandé combien de temps et d'efforts vous pouviez économiser avec une solution de service mesh et à quoi cela servait réellement ?\r\n\r\nAurélie et Kevin vont vous partager de nombreux conseils et outils, qu'ils utilisent tous les jours dans leurs entreprises, dans l’optique de vous permettre de vous faciliter le quotidien. Et cela améliorera également vos applications !",
+  "start": 1558080600000,
+  "end": 1558083600000,
+  "category": "Conference 2",
+  "place": "Conference 2",
+  "speakers": [
+   {
+    "name": "Kevin Davin",
+    "description": "Google Developer Expert on GCP, I am above all passionate about tech, languages, infrastructure, and automation. \r\n\r\nJava, Kotlin, Go, Javascript or TypeScript are my day-to-day languages. I deploy all of those on the Google Kubernetes Engine with the Continuous Integration of Gitlab 🚀. \r\n\r\nAddict of agility and devops, some of my work was to help teams to follow those philosophies. From the analysis of the code quality (with code-review or static analysis tool) to the setup of unit or end-to-end tests and ending by the continuous deployment of the application directly on the Google Cloud platform. \r\n\r\nMy mantra is to go to production as soon as possible! In my activity in Stack Labs and also in my personal time, I contribute on open source projects (Spring boot, Spring Security, Angular, Protractor, Jest schematics for Angular, NgxOpenlayers...). . \r\n\r\nI'm involved in the GDG Toulouse, on the organization part (for the video capture part) and to provide some talks too. Following that, I'm also into the DevFest Toulouse team since day 1. I'm mainly managing the website during the Devfest season. Thanks to that, I became the first external contributor to the GDG-X/hoverboard project. \r\n\r\nI'm currently CTO (and one of the founder) of Stack Labs, a company specialized in architecture and development of cloud solution. I supervise about twenty passionate and talented developers in their missions and during our internal events",
+    "company": "Stack Labs",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=585",
+    "social": {
+     "twitterUrl": "http://twitter.com/davinkevin"
+    }   }, 
+   {
+    "name": "Aurélie Vache",
+    "description": "Aurélie est Cloud developer (& DevOps) chez Continental à Toulouse, en France. Elle travaille comme développeuse depuis plus de 10 ans. Ancienne développeuse Java / JEE, puis développeuse Web, Full-Stack et Lead, elle est maintenant Cloud developer et DevOps sur des projets de véhicules connectés et autonomes. En tant que l’une des leaders de Duchesse France, une association qui promeut les femmes développeurs et les femmes travaillant dans l'informatique, elle est fortement impliquée dans leur initiative de coaching #AdoptADuchess, qui aide les développeurs débutants et en reconversion. Elle est également l’une des organisatrices du DevFest Toulouse et un membre de la core team du Toulouse Data Science (TDS).\r\nElle est également rédactrice d'articles techniques et marraine de l’association Elles Bougent.",
+    "company": "Continental",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=586",
+    "social": {
+     "twitterUrl": "http://twitter.com/aurelievache"
+    }   } 
+  ]
+ }, 
+ {
+  "name": "FaaS and Furious : 3h pour devenir une star du serverless !",
+  "description": "Durant cette université, nous vous proposons de couvrir le cycle de vie complet de création de fonctions serverless grâce à OpenFaaS, du déploiement d’OpenFaaS sur un cluster Kubernetes, jusqu’au monitoring des fonctions, en passant par le cycle DevOps de CI/CD.\r\nNous verrons toutes les problématiques et challenges qu’apportent ce nouveau type de développement, et comment les résoudre.\r\nCette université sera agrémentée de plusieurs démonstrations afin de bien comprendre les tenants et aboutissants d’un développement serverless.\r\nNous expliquerons aussi comment installer les différents outils pour que le public puisse repartir avec les éléments nécessaires pour reproduire les exemples de l'université et aller plus loin.\r\n",
+  "start": 1557903600000,
+  "end": 1557914400000,
+  "category": "Workshop 2",
+  "place": "Workshop 2",
+  "speakers": [
+   {
+    "name": "Laurent Grangeau",
+    "description": "Laurent Grangeau is a Cloud Solution Architect with more than 10+ years of experience. Former Java developer, he has since developed in .NET, with Agile and DevOps mindsets. He has been experimenting with cloud providers for more than 5+ years. Docker enthusiast from the beginning, he has experienced with building microservices and distributed systems. He loves to automate things and run distributed applications at scale.",
+    "company": "Sogeti",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=560",
+    "social": {
+     "twitterUrl": "http://twitter.com/laurentgrangeau"
+    }   } 
+  ]
+ }, 
+ {
+  "name": "Ton propre kilt, tissé avec des microservices !",
+  "description": "Oui, sérieusement, un kilt, tissé avec des microservices, à la mode serverless ! Pourquoi pas ? Vous allez pouvoir repartir avec une photo de vous portant votre propre kilt, avec le motif tartan que vous aurez dessiné vous-même. Et tout cela avec une application déployée sur l’infrastructure de Google Cloud, basée sur des microservices écrits en différents langages, qui tournent sur Cloud Functions, ou encore App Engine.\r\n\r\nNous verrons ensemble comment construire et déployer une telle application, à base de microservices qui réagissent à des événements (stockage d’image), en échangeant des messages via Pub/Sub, en réagissant à des changements dans la la base de données distribuée Firestore. Au delà des fonctions et des applications, nous verrons aussi que l’on peut faire tourner des containers en serverless. Et enfin vous saurez si vous avez le look pour porter un vrai kilt d’Highlander !!!",
+  "start": 1558021800000,
+  "end": 1558023300000,
+  "category": "Conference 2",
+  "place": "Conference 2",
+  "speakers": [
+   {
+    "name": "Guillaume Laforge",
+    "description": "Developer Advocate at @Google for @GoogleCloud during the day, and @ApacheGroovy programming language project co-founder & PMC member, @java_champions at night.",
+    "company": "Google",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=574",
+    "social": {
+     "twitterUrl": "http://twitter.com/glaforge"
+    }   } 
+  ]
+ }, 
+ {
+  "name": "Du Microservice au Service Mesh avec Kubernetes, Istio et Kiali",
+  "description": "Lorsqu'on adopte une architecture en microservices, il faut faire face à des problématiques liées à leur nature distribuée : orchestration des services et de leurs versions, sécurisation des flux de données, monitoring d'un système à la topologie changeante... Les Service Meshes apportent une panoplie de solutions à ces problèmes. Dans l’écosystème Kubernetes, Istio (Google/IBM/Lyft) aidé de son petit frère Kiali (Red Hat) jouent sur ce terrain-là.\r\n\r\nNous vous proposons d'y voir plus clair en abordant le fonctionnement d'Istio, puis nous vous présenterons une démo très footballistique illustrant certaines de ses fonctionnalités, tout en utilisant Kiali comme support visuel. Au programme notamment : observabilité, route management, traffic shadowing, circuit breaking...\r\n",
+  "start": 1558021800000,
+  "end": 1558025100000,
+  "category": "JUDCon Conference",
+  "place": "JUDCon Conference",
+  "speakers": [
+   {
+    "name": "Nicolas Muller",
+    "description": "",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=675",
+    "social": {
+     "twitterUrl": "http://twitter.com/zepouet"
+    }   }, 
+   {
+    "name": "Joel Takvorian",
+    "description": "Software Engineer at Red Hat, I work on the Kiali project, a service mesh visualization tool for Kubernetes and Istio.\r\n\r\nI'm in the world of monitoring since a couple of years already, having worked on Hawkular Metrics, crafted some pieces of tools around Prometheus and Grafana, and being maintainer of Vert.x Micrometer Metrics.\r\n",
+    "company": "Red Hat",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=676",
+    "social": {
+     "twitterUrl": "http://twitter.com/jotak"
+    }   } 
+  ]
+ }, 
+ {
+  "name": "Registration and breakfast",
+  "start": 1557901200000,
+  "end": 1557903600000,
+  "speakers": [
+  ]
+ }, 
+ {
+  "name": "Let Microsoft VSCode play with Wildfly / EAP ",
+  "description": "Microsoft VSCode is gaining lots of traction these days even in the Java developers landscape. Thanks to the Java VSCode extension, those Java developer can now develop and test with VSCode. But what if they want to interaction with traditional enterprise development offering like Wildfly, Red Hat EAP,...\r\nIn this session, you will discover a new set of VSCode extensions that allows to go a step forward and see live demos that show that VSCode can be use in enterprise development just as any other IDE",
+  "start": 1558101000000,
+  "end": 1558104000000,
+  "category": "JUDCon Conference",
+  "place": "JUDCon Conference",
+  "speakers": [
+   {
+    "name": "Jeff MAURY",
+    "description": "Je dirige actuellement le project open source JBoss Tools qui, après avoir fourni du tooling au dessus d’Eclipse IDE pour JavaEE et OpenShift, travaille aujourd’hui pour fournir les mêmes outils sur VSCode.",
+    "company": "Red Hat",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=678",
+    "social": {
+     "twitterUrl": "http://twitter.com/jeffmaury"
+    }   } 
+  ]
+ }, 
+ {
+  "name": "Programmation NES en langage C",
+  "description": "Nintendo Entertainment System, la console mythique qui a vu naître tant de classiques comme les premiers Mario ou Zelda. C’était le bon temps ! Mais à l’époque, il fallait maîtriser l’assembleur pour programmer son processeur 8 bits.\r\n\r\n\r\nAujourd’hui, heureusement , c’est beaucoup plus simple grâce à neslib. Nous installerons ensemble une toolchain qui nous permettra de coder nos propres petits jeux en langage C, dessiner nos sprites, et les voir s’animer alors que le jeu tournera sur la console d’origine ou sur un émulateur.",
+  "start": 1558092600000,
+  "end": 1558095600000,
+  "category": "Ateliers «On n'est pas que des codeurs»",
+  "place": "Ateliers «On n'est pas que des codeurs»",
+  "speakers": [
+   {
+    "name": "Alexis Bietti",
+    "description": "Codeur, bassiste, gamer.",
+    "company": "Wall Street Systems",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=686"   } 
+  ]
+ }, 
+ {
+  "name": "Making virtual machines cloud native with KubeVirt",
+  "description": "Kubernetes is nowadays the de-facto standard for orchestrating containers inside and even across clusters. Migrating legacy workloads from virtual machines to containers might be impossible though, be it because lack of manpower, high costs, or some other reason. Ultimately this means you need to manage your virtual machines and your cloud native workloads with two different tools.\r\n\r\nDo you? No, luckily you don't! KubeVirt enables you to run your virtual machines as first-class citizen in your Kubernetes cluster, alongside with your containers, sharing the same storage, network, and compute resources. KubeVirt uses Kubernetes' extensibility features to do so.\r\n\r\nThis session gives you an introduction to these features, shows you how KubeVirt uses them, and ends with a demo of running a virtual machine in Kubernetes.\r\n",
+  "start": 1558014600000,
+  "end": 1558017600000,
+  "category": "JUDCon Conference",
+  "place": "JUDCon Conference",
+  "speakers": [
+   {
+    "name": "Marc Sluiter",
+    "description": "Coming from the Java World, Marc got into touch with containers, Kubernetes and Golang in 2015, when he joined a team building a deployment and runtime platform for developers, based on these technologies.\r\n\r\nIn 2018 he joined RedHat and KubeVirt, a project aiming at making virtual machines a cloud native citizen in the Kubernetes world.",
+    "company": "Red Hat",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=679",
+    "social": {
+     "twitterUrl": "http://twitter.com/slintes"
+    }   } 
+  ]
+ }, 
+ {
+  "name": "Java Features Deep Dive",
+  "description": "Comme le disait Picasso \"Les bons artistes copient, les grands artistes volent\",  Java n'invente en rien, il vole et s'approprie les features des autres langages en essayant de les intégrer de façon pas trop stupide.\r\nEt si Java volait les macros de LISP, le mot clé lazy de Scala, les structs sur la pile du C, les smart-casts de Groovy, le pattern matching de Caml, les data classes de Kotlin, les goroutine de Go, les appels natifs du C.\r\nEn fait, cette liste de features est un sous ensemble de la liste des features que Java a prévu d'intégrer dans les 5 prochaines années (si on est optimiste sinon c'est 10 ans).\r\nDans ce deep dive, on jouera avec des demos de ces features et pour chacune d'elle, je vous expliquerais le pourquoi du comment.",
+  "start": 1557903600000,
+  "end": 1557914400000,
+  "category": "Workshop 1",
+  "place": "Workshop 1",
+  "speakers": [
+   {
+    "name": "Rémi Forax",
+    "description": "Tombé dans le Java quand il était tous petit. A pas tant grandi que cela depuis, mais j'ai eu la chance de pouvoir apporter ma pierre au design de invokedynamic pour Java 7, des lambdas pour Java 8, des modules pour Java 9. J'ai été nommé Java Champion récemment, je sais trop ce que cela veut dire mais je trouve cela assez cool !",
+    "company": "Université de Marne la Vallée",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=654",
+    "social": {
+     "twitterUrl": "http://twitter.com/RemiForaxOff"
+    }   } 
+  ]
+ }, 
+ {
+  "name": " Lunch",
+  "start": 1557914400000,
+  "end": 1557921600000,
+  "speakers": [
+  ]
+ }, 
+ {
+  "name": "Registration and breakfast",
+  "start": 1557987600000,
+  "end": 1557990000000,
+  "speakers": [
+  ]
+ }, 
+ {
+  "name": "Sell your talk",
+  "description": "",
+  "start": 1557993600000,
+  "end": 1557994200000,
+  "category": "Conference 1",
+  "place": "Conference 1",
+  "speakers": [
+  ]
+ }, 
+ {
+  "name": "Keynote organisateurs",
+  "description": "",
+  "start": 1557990000000,
+  "end": 1557990900000,
+  "category": "Conference 1",
+  "place": "Conference 1",
+  "speakers": [
+  ]
+ }, 
+ {
+  "name": "Coffee break",
+  "start": 1557994200000,
+  "end": 1557994800000,
+  "speakers": [
+  ]
+ }, 
+ {
+  "name": "Lunch",
+  "start": 1558001400000,
+  "end": 1558006200000,
+  "speakers": [
+  ]
+ }, 
+ {
+  "name": "Introduction to Knative",
+  "description": "Knative is a Kubernetes-based platform that comes with a set of building blocks to build, deploy, and manage modern serverless workloads. Knative consists of three major areas: Build, Serving and Eventing. The session gives you an introduction of the different parts of Knative and walks you through an end-to-end demo, showing the lifecycle of an event-driven application. You will learn how to build container images inside your cluster, straight from your Git repository. The session explains how Knative uses Kubernetes and Istio features to provide request driven compute, so that services can autoscale, including down to 0, depending on the actual throughput. Finally you'll see integration of events and how your application can be hooked up to a firehose and connect your service to process incoming events. If you are interested in learning about serverless developer experience on Kubernetes, this session is for you!",
+  "start": 1557998400000,
+  "end": 1558001400000,
+  "category": "JUDCon Conference",
+  "place": "JUDCon Conference",
+  "speakers": [
+   {
+    "name": "Matthias Wessendorf",
+    "description": "Matthias Wessendorf works on the Messaging team at  Red Hat,  focusing on event-driven architectures, data-streaming and serverless workloads. He is an  active contributor to the Knative project. Matthias is a regular speaker at international conferences and is a long standing member of the Apache Software Foundation.",
+    "company": "Red Hat",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=677",
+    "social": {
+     "twitterUrl": "http://twitter.com/mwessendorf"
+    }   } 
+  ]
+ }, 
+ {
+  "name": "Coffee break",
+  "start": 1558012800000,
+  "end": 1558014600000,
+  "speakers": [
+  ]
+ }, 
+ {
+  "name": "Breakfast",
+  "start": 1558074000000,
+  "end": 1558076400000,
+  "speakers": [
+  ]
+ }, 
+ {
+  "name": "Sell your talk",
+  "description": "",
+  "start": 1558079400000,
+  "end": 1558080000000,
+  "category": "Conference 1",
+  "place": "Conference 1",
+  "speakers": [
+  ]
+ }, 
+ {
+  "name": "Coffee break",
+  "start": 1558080000000,
+  "end": 1558080600000,
+  "speakers": [
+  ]
+ }, 
+ {
+  "name": "Lunch",
+  "start": 1558087200000,
+  "end": 1558092600000,
+  "speakers": [
+  ]
+ }, 
+ {
+  "name": "Coffee break",
+  "start": 1558099200000,
+  "end": 1558101000000,
+  "speakers": [
+  ]
+ }, 
+ {
+  "name": "Cocktail party",
+  "start": 1558025100000,
+  "end": 1558036200000,
+  "speakers": [
+  ]
+ }, 
+ {
+  "name": "React Fiber : une innovation discrète, des implications retentissantes",
+  "description": "L’équipe de React a fait de nombreuses annonces à propos de nouvelles APIs ces derniers temps. On parle de : Suspense, Lazy Hooks, Error Boundaries, Time Slicing ou encore Concurrent React.\r\n\r\nIl y a des choses particulièrement intéressantes comme de nouveaux patterns de programmation qui pourraient changer la manière de coder des interfaces dans le futur. Mais il faut avouer qu’il peut devenir difficile de suivre toutes les évolutions proposées et en comprendre la direction.\r\n\r\nL’effervescence autour des nouvelles fonctionnalités a pour origine la ré-implémentation du moteur de React dans sa version 16 : nom de code React Fiber (sorti en septembre 2017). Cette refonte très technique n’a pas fait de buzz et n’a rien changé directement dans l’API. Elle a en revanche libéré un potentiel incroyable pour trouver de nouveaux concepts que Facebook ajoute petit à petit dans sa bibliothèque.\r\n\r\nNous vous proposons de reprendre le sujet dans l’ordre : qu’est ce que React Fiber ? Qu’est ce qui change dans le moteur et ce que cela veut dire pour vous ? Nous nous intéresserons ensuite à chacune des nouveautés (Suspense, Lazy, Hooks, Error Boundaries, Time Slicing, ...) pour en détailler le fonctionnement, ce que cela apporte et son lien avec Fiber.\r\n\r\nNous illustrerons chacun des concepts avec un livecoding d’une arène de pokemon !",
+  "start": 1558009800000,
+  "end": 1558012800000,
+  "category": "Conference 2",
+  "place": "Conference 2",
+  "speakers": [
+   {
+    "name": "Matthieu Lux",
+    "description": "Developer Advocate chez AYA @ Zenika pour toutes les technologies Web et JavaScript.(React, Vue, Angular, Redux, Node, GraphQL, Next, Nuxt)Développeur, formateur, organisateur au LyonJS, plusieurs projets Open Source.Speaker à de nombreuses conférences : dotJS, Paris Web, ngEurope, DevoxxFR, MixIT...",
+    "company": "Zenika",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=653",
+    "social": {
+     "twitterUrl": "http://twitter.com/Swiip"
+    }   }, 
+   {
+    "name": "Florent Berthelot",
+    "description": "Membre de l'équipe AYA @ Zenika.\r\n\r\nJe suis passionné du Web et des technologies qui gravitent autour. J'aime le W3C, le TC39 (quand il ne smoosh pas devant moi), le WhatWG, les Frameworks JS (front & back) et la vanille.\r\n\r\nTransmettre ma passion pour l'artisanat web occupe une part importante de mon travail de développeur (meetups, formations, conférences, encadrement de stagiaires).\r\n\r\nVive le web, Vive le JS et Vive l'artisanat !",
+    "company": "Zenika",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=657",
+    "social": {
+     "twitterUrl": "http://twitter.com/@berthel350"
+    }   } 
+  ]
+ }, 
+ {
+  "name": " Java to native executable: how GraalVM and Quarkus change the game",
+  "description": "Microservices, rapid scalability and high density deployment platforms\r\nlike Kubernetes require apps with low memory usage and fast boot time.\r\nJava had been the outsider in that universe due to its focus on\r\nthroughput at the expense of CPU and RAM.\r\n\r\nNo more.\r\nEnter Quarkus, a microservices Java stack bringing your favorite\r\nlibraries (Hibernate, vert.x, Camel, RESTEasy, Netty...) to GraalVM and\r\nHotSpot with minimal memory usage and fast boot time. Enough to swim in\r\ncontainers like a fish in water. It makes GraalVM usable for real apps.\r\n\r\nCome discover GraalVM powers and limits and how Quarkus focuses on size\r\nand speed with no compromise on developer experience and ecosystem\r\nsupport. Since Quarkus is to be experienced more than talked about,\r\nexpect a heavy demo session.\r\n\r\nThe next Java revolution is starting: come experience it.",
+  "start": 1558080600000,
+  "end": 1558083600000,
+  "category": "JUDCon Conference",
+  "place": "JUDCon Conference",
+  "speakers": [
+   {
+    "name": "Emmanuel Bernard",
+    "description": "Emmanuel Bernard is a long time Open Source contributor and Java champion best known for his contributions to Hibernate ORM and Hibernate Validator as well as JPA and Bean Validation. He co-hosts Les Cast Codeurs, a developer podcast in French.  \r\nEmmanuel Bernard is Chief Architect at Red Hat in the Middleware Business Unit. As Chief Architect, he oversees how data and middleware interact and is involved in Hibernate, Infinispan, Debezium (Change Data Capture) and more. To sum up, everything data :)",
+    "company": "Red Hat",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=572",
+    "social": {
+     "twitterUrl": "http://twitter.com/emmanuelbernard"
+    }   } 
+  ]
+ }, 
+ {
+  "name": "Il faut sauver LoRa",
+  "description": "Un tremblement de terre vient de se produire, et tu es enfermé(e) dans ta **geek-cave**.\r\nMalheureusement, quand une catastrophe naturelle se produit, les **réseaux** et **l’électricité** sont les deux premières choses qui tombent, alors le Safety Check de Facebook, forcément, **ça ne marche pas**. \r\n\r\nBienvenue dans notre monde **dégradé**.\r\n\r\nHeureusement, ton analyseur de spectre t’indique une passerelle **LoRa** à quelques kilomètres.\r\n\r\nEt si on enlevait internet? Et si la bande passante coûtait cher? Et si tu n'avais que quelques bytes pour communiquer ?\r\n\r\nIl te reste **moins de 3h** pour hacker les passerelles, s’y connecter, communiquer avec l’extérieur, et envoyer le bon message pour que les secours viennent te chercher.\r\n\r\nLes Technologies? MQTT, LoRaWAN, Node.js, Python ou Java, et Raspberry Pi!\r\n\r\nChaque équipe sera divisée en deux profils : Les **Rescue Hackers** (back + broker) et les **Geek Victims** (comm' LoRa, comm' Série et encoding).  \r\n\r\nOn nous dit dans l'oreillette que les premiers rescapés repartiraient avec des devkits complets...",
+  "start": 1557921600000,
+  "end": 1557932400000,
+  "category": "Workshop 1",
+  "place": "Workshop 1",
+  "speakers": [
+   {
+    "name": "Antoine LEBEL",
+    "description": "Antoine est développeur touche-à-tout chez Takima (IoT, dev, ops, design, marketing, ...). Il aime les choses qui sont bien finies, a une appétence particulière pour le front et apprécie de voir des étoiles dans les yeux des end-users. Côté stack, c’est principalement AngularJS, Angular, mais aussi React & Vue. Côté back, Node, afin de garder un environnement full JS. Il gère également une communauté eSport de plus de 50 000 joueurs au niveau européen.",
+    "company": "Takima",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=583",
+    "social": {
+     "twitterUrl": "http://twitter.com/antoleb"
+    }   }, 
+   {
+    "name": "Loïc Ortola",
+    "description": "Loïc is the senior advocate of Takima, and CTO of Jawg Maps. \r\nJVM-based languages, Application performance, DevOps & Automation, Dev Discipline and Tech for Good are his primary targets!\r\n\r\nSince last year, Loïc has been orchestrating R&D in the taskforce named Hackers Against Natural Disasters, an organization that creates and deviates technologies to help raise awareness around the risks of Natural Disasters. In there, he met LoRa, Hardware and embedded technologies & protocols, and fell in love with it!",
+    "company": "Takima",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=584",
+    "social": {
+     "twitterUrl": "http://twitter.com/LoicOrtola"
+    }   } 
+  ]
+ }, 
+ {
+  "name": "Le syndrome de l'imposteur, kezako ?",
+  "description": "Qui n’a pas un jour prononcé la phrase : j’ai l’impression d’être un imposteur ? Je ne me sens pas légitime de faire ceci ou de faire cela ? Certaines personnes sont persuadées qu’elles ne méritent pas leur succès, malgré les efforts qu’elles fournissent pour réussir. Elles s’auto-persuadent souvent que leur réussite n’est pas liée à leur travail, leur accomplissement personnel, mais tout bonnement à la chance ou bien au travail des autres. De fait, elles vivent en permanence avec un sentiment de duperie et craignent sans cesse que quelqu’un ne les démasque d’un jour à un autre.\r\nDans ce quickie nous ferons un retour sur ce qu'est le syndrome de l'imposteur, comment il se réflète au quotidien et nous verrons que ce n'est pas une fatalité, au contraire, qu'il existe des tips et astuces pour le combattre, se dépasser et s'améliorer.",
+  "start": 1558020000000,
+  "end": 1558021500000,
+  "category": "Conference 1",
+  "place": "Conference 1",
+  "speakers": [
+   {
+    "name": "Aurélie Vache",
+    "description": "Aurélie est Cloud developer (& DevOps) chez Continental à Toulouse, en France. Elle travaille comme développeuse depuis plus de 10 ans. Ancienne développeuse Java / JEE, puis développeuse Web, Full-Stack et Lead, elle est maintenant Cloud developer et DevOps sur des projets de véhicules connectés et autonomes. En tant que l’une des leaders de Duchesse France, une association qui promeut les femmes développeurs et les femmes travaillant dans l'informatique, elle est fortement impliquée dans leur initiative de coaching #AdoptADuchess, qui aide les développeurs débutants et en reconversion. Elle est également l’une des organisatrices du DevFest Toulouse et un membre de la core team du Toulouse Data Science (TDS).\r\nElle est également rédactrice d'articles techniques et marraine de l’association Elles Bougent.",
+    "company": "Continental",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=586",
+    "social": {
+     "twitterUrl": "http://twitter.com/aurelievache"
+    }   } 
+  ]
+ }, 
+ {
+  "name": "Développement Cloud-Natif Java avec Spring Boot, ISTIO et Eclipse Che",
+  "description": "Cet Hands-on introduit les concepts clés du développement “cloud-natif” avec les technologies suivantes:\r\n\r\n* Spring Boot\r\n* Istio service mesh\r\n* Jaeger (suivi des évènements - distributed tracing )\r\n* Red Hat OpenShift/Kubernetes.\r\n\r\nDurant ce lab, vous développerez une application Java basée sur des micro-services avec Spring Boot depuis votre navigateur dans Eclipse Che. Vous verrez comment assembler et déployer vos services dans des containers orchestrés par Kubernetes/OpenShift.\r\n\r\nVous apprendrez comment enrichir votre première application multi-services avec de la tolérance aux pannes par le biais d’un court-circuit (circuit breaker), leur supervision en suivant les évènements générés par les différents services mais également l’automatisation du déploiement avec Jenkins.",
+  "start": 1557921600000,
+  "end": 1557932400000,
+  "category": "JUDCon Workshop",
+  "place": "JUDCon Workshop",
+  "speakers": [
+   {
+    "name": "Tugdual Grall",
+    "description": "Tugdual Grall, est Director of Product Management chez Red Hat dans l'équipe \"Dev Tools\" ou il participe a la définition de l'Experience Développeur des outils comme OpenShift/Kubernetes et les offres Middleware (JBoss)\r\n\r\nAvant de travailler chez Red hat, \"Tug\", était Technical Evangelist chez MapR, MongoDB et Couchbase. Tug a également travaillé comme CTO chez eXo Platform, et comme Product Manager et Développeur sur la platform JavaEE d'Oracle.\r\n\r\nTugdual est également co-fondateur du Nantes JUG (Java Users Group) qui réunit tous les mois depuis 2008 les développeurs et architectes de la région nantaise.",
+    "company": "Red Hat",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=756",
+    "social": {
+     "twitterUrl": "http://twitter.com/@tgrall"
+    }   } 
+  ]
+ }, 
+ {
+  "name": "Keynote TBA",
+  "description": "",
+  "start": 1558076400000,
+  "end": 1558079400000,
+  "category": "Conference 1",
+  "place": "Conference 1",
+  "speakers": [
+  ]
+ }, 
+ {
+  "name": "Quand Java enterprise se met au réactif",
+  "description": "Alors que Java EE 8 est sorti en 2017, son modèle de programmation et d'exécution n’a pas beaucoup évolué... contrairement au reste du monde de l’IT. Cloud, microservices, IoT, Kubernetes, machine learning. Tout cela a changé la façon dont nous construisons et déployons du logiciel. Les applications CRUD traditionnelles sont de plus en plus souvent remplacées par de l’event sourcing et du CQRS, mettant les flux de données au coeur de nos systèmes (avec par exemple Eclipse Vert.x ou Debezium).\r\n\r\nCes changements font que Java EE n’est plus toujours pertinent. Pourtant, ces dernières années, un nouvel élan est venu avec Eclipse Microprofile et Jakarta EE. Java enterprise se refait une jeunesse avec les API Microprofile Reactive Streams Operators et Microprofile Reactive Messaging !\r\n\r\nVous voulez savoir comment des applications JAX-RS peuvent diffuser des données et adopter la programmation réactive? Comment nos bons vieux POJO peuvent être annotés pour gérer des flux Kafka, AMQP ou MQTT? Alors ne manquez pas cette présentation!",
+  "start": 1558084200000,
+  "end": 1558087200000,
+  "category": "JUDCon Conference",
+  "place": "JUDCon Conference",
+  "speakers": [
+   {
+    "name": "Thomas Segismont",
+    "description": "Je suis membre de la [Vert.x](https://vertx.io/) core team, particulièrement intéressé par le clustering et le monitoring. Je suis développeur depuis près de 15 ans et j’ai travaillé sur des projets très variés (finance, tourisme, banque, hébergeur). J’ai rejoint [Red Hat](https://www.redhat.com/fr) en 2012 et je vis à Marseille avec ma femme et nos 4 enfants. Dans mon temps libre, j’essaie de devenir un meilleur judoka.",
+    "company": "Red Hat",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=539",
+    "social": {
+     "twitterUrl": "http://twitter.com/tsegismont"
+    }   } 
+  ]
+ }, 
+ {
+  "name": "L'internationalisation des sites, comment s'y prendre ?",
+  "description": "L’internationalisation des sites est un domaine fascinant où votre culture personnelle s'enrichit à chaque seconde : différences culturelles/légales, alphabets/typographies surprenants, originalités/curiosités… de purs moments d’exotismes culturels, qui apportent des challenges assez cools, comme par exemple adapter un site dans des langues qui se lisent de droite à gauche, comme l'arabe. Si si, ce n'est pas si difficile, et une de mes choses préférées en intégration ! ;)\r\n\r\nC’est aussi un domaine où l’on peut facilement se retrouver bloqué pour des choses apparemment « triviales »… et c'est parfois assez rageant. Vous ne parlez pas japonais ? Rassurez-vous, moi non plus. Et pourtant, je dois faire avec. Il m’arrive de devoir faire avec d’autres langues, comme le chinois, le russe, le serbe, le néerlandais ou l’arabe.\r\n\r\nEt là, l’exotisme se transforme parfois en galères. En prime, il existe une quantité astronomique de petites peaux de bananes sur lesquelles il est très facile de déraper. Je le sais, chacune des choses dont je vous parlerai… je les ai vécues au moins une fois. Et les soucis ne s’arrêtent pas aux seules traductions. Même le français peut être une galère dans certains cas.\r\n\r\nBref, c’est un domaine où l’on apprend principalement… de ses erreurs.\r\n\r\nMon objectif : à la fin de cette présentation, vous épargner les difficultés des débutants en internationalisation, faire un petit tour de ce que cela impacte côté métiers (design, front, back, chefs de projets, etc.) et vous permettre de démarrer ce genre de projet du bon pied, et que cela redevienne une belle destination exotique, garantie sans piqûres de moustiques ! ;)",
+  "start": 1557994800000,
+  "end": 1557997800000,
+  "category": "Conference 2",
+  "place": "Conference 2",
+  "speakers": [
+   {
+    "name": "Nicolas Hoffmann",
+    "description": "Nicolas est un soldat monté pacifiquement au front (-end) depuis plus de 15 ans, qui a bossé en web agency en Suisse pendant une dizaine d'année, et qui travaille actuellement entre autres sur l'UI et CSS en tant que quark... chez ProtonMail.\r\n\r\nIl dompte avec pragmatisme la créativité des graphistes par le truchement des CSS avec un niveau d’exigence qualitatif proche de l’horlogerie suisse, mais sans faire coucou.\r\n\r\nDirecteur du collectif OpenWeb, conférencier à des événements comme Paris-Web, Codeurs en Seine, Sud Web, etc., aussi auteur du micro-framework CSS Röcssti, certifié Expert qualité Opquast, également auteur de scripts accessibles via le projet Van11y - avec de l’ARIA dedans - et de plus d’une cinquantaine d’articles sur la conception de CSS, la sécurité, la qualité Web, etc., il est parfois délicatement surnommé « le Suisse-Allemand de la qualité Web » à cause d'un bon score à la certification Opquast. Le pire, c’est qu’il prend ce surnom comme un compliment.",
+    "company": "ProtonMail",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=595",
+    "social": {
+     "twitterUrl": "http://twitter.com/Nico3333fr"
+    }   } 
+  ]
+ }, 
+ {
+  "name": "Cloud : 3 scénarios multi-providers, du portage IaaS, au BaaS, au serverless en abstraction totale",
+  "description": "2018 fut l'année de l'adoption massive du Cloud, pour de la **production** réelle.\r\n\r\nL'étape suivante, c'est de passer au **cloud multi-providers**.\r\nMais cette stratégie _multi-providers_ présente des enjeux d'architecture et d'implémentation techniques particuliers.\r\n\r\nCette université vous accompagne dans la découverte de 3 scénarios _live coding_ :\r\n\r\n1. Le portage d'une plateforme construite sur du _IaaS_ vers une solution équivalente mais multi-_providers_. Pour ne pas être prisonnier d'un seul fournisseur.  \r\n**Comment faire évoluer la codebase d'_Infra as Code_ `Terraform` pour maintenir et opérer cette solution ?**\r\n1. La construction d'une solution _Backend-as-a-service_, où un service Cloud d'un _provider_ interagit avec un autre service Cloud d'un 2e _provider_ et ainsi de suite. Et ainsi tirer parti du meilleur de chaque fournisseur.  \r\n**Comment gérer cela sur le plan du _provisionning_, du modèle de sécurité, des flux réseau ?**\r\n1. La construction d'une application hébergée en _serverless_ où l'on veut être agnostique de l'infrastructure bien sûr, mais aussi du service _FaaS_ utilisé. Voire utiliser différents services _FaaS_ via le _framework_ `serverless.io`.",
+  "start": 1557921600000,
+  "end": 1557932400000,
+  "category": "Deep-Dive Conference 2",
+  "place": "Deep-Dive Conference 2",
+  "speakers": [
+   {
+    "name": "Laurent Grangeau",
+    "description": "Laurent Grangeau is a Cloud Solution Architect with more than 10+ years of experience. Former Java developer, he has since developed in .NET, with Agile and DevOps mindsets. He has been experimenting with cloud providers for more than 5+ years. Docker enthusiast from the beginning, he has experienced with building microservices and distributed systems. He loves to automate things and run distributed applications at scale.",
+    "company": "Sogeti",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=560",
+    "social": {
+     "twitterUrl": "http://twitter.com/laurentgrangeau"
+    }   }, 
+   {
+    "name": "Ludovic Piot",
+    "description": "Ludovic felt into _DevOps_ in 2004 with first _Infra as Code_ deployments on _bare-metal_ blade servers.  \nHe's found of empowering project teams through automated tools and friendly collaboration, and then welcome `Docker` and `Kubernetes` as the ultimate tools to leverage his favorite practice.  \nThrough meetups, conferences and forums, he shares his love for _cloud_, _infra as code_, _devops_ and performance topics. ",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=558",
+    "social": {
+     "twitterUrl": "http://twitter.com/lpiot"
+    }   }, 
+   {
+    "name": "Adrien Blind",
+    "description": "Adrien is a tech & DataOps evangelist at Saagie, a company enabling its customers to accelerate and industrialize their data and AI projects. Previously, Adrien led the DevOps transformation of Societe Generale CIB, coaching new practices (de-siloted feature teams, delivery pipelines, infra automation...) and fostering the adoption of appropriate technologies (Docker, configuration tools, APIs...). Earlier, he helped various companies transforming their IT when he was DevOps consultant for Octo Technology.\r\n\r\nAside his professional activities, Adrien manages the Kubernetes, Docker and Serverless architecture meetup groups in Paris. He's also part of the Docker Captains program at Docker Inc.\r\n\r\nAdrien loves sharing his knowledge and experience ; he speaks regularly about the devops/dataops practices, as well as the container landscape, in tech events such as Dockercon EU, Devoxx/Voxxed, Devops D-Day conferences...\r\n",
+    "company": "Saagie",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=559",
+    "social": {
+     "twitterUrl": "http://twitter.com/adrienblind"
+    }   } 
+  ]
+ }, 
+ {
+  "name": "Practical Change Data Streaming Use Cases With Apache Kafka and Debezium",
+  "description": "Debezium (noun | de·be·zi·um | /dɪ:ˈbɪ:ziːəm/) - Secret Sauce for Change Data Capture\r\n\r\nApache Kafka is a highly popular option for asynchronous event propagation between microservices. Things get challenging though when adding a service’s database to the picture: How can you avoid inconsistencies between Kafka and the database? \r\n\r\nEnter change data capture (CDC) and Debezium. By capturing changes from the log files of the database, Debezium gives you both reliable and consistent inter-service messaging via Kafka and instant read-your-own-write semantics for services themselves.\r\n\r\nIn this session you’ll see how to leverage CDC for reliable microservices integration as well as many other use cases such as extracting microservices out of monoliths, invalidating your 2nd-level cache after external data changes, automatically keeping your full-text search index in sync, enabling streaming queries on your operational data, data historization and much more. We’ll also discuss practical matters such as ensuring data quality in data streaming pipelines and implementing data conversions using single message transformations.\r\n",
+  "start": 1558018200000,
+  "end": 1558021500000,
+  "category": "JUDCon Conference",
+  "place": "JUDCon Conference",
+  "speakers": [
+   {
+    "name": "Gunnar Morling",
+    "description": "Gunnar Morling is a software engineer and open-source enthusiast by heart. He is leading the Debezium project, a tool for change data capture (CDC). He is a committer to multiple Hibernate projects, the spec lead for Bean Validation 2.0 (JSR 380) and has founded multiple open source projects such as Deptective and MapStruct. Prior to joining Red Hat, Gunnar worked on a wide range of Java EE projects in the logistics and retail industries. He's based in Hamburg, Germany.",
+    "company": "Red Hat",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=534",
+    "social": {
+     "twitterUrl": "http://twitter.com/gunnarmorling"
+    }   } 
+  ]
+ }, 
+ {
+  "name": "Fabriquer les boites pour vos anciens jeux vidéo, ça vous dit ?",
+  "description": "Depuis quelques années le retrogaming a le vent en poupe, on entend parler que de ça !\r\nTout le monde succombe à la nostalgie de rejouer à la console de son enfance.\r\nConséquence logique, les prix des anciens jeux grimpent en flèche sur le marché de l'occasion. Et pour peu que vous vouliez racheter vos jeux complets (comprendre avec la boite d'origine et la notice) pour agrémenter votre modeste collection, votre PEL va en prendre un sacré coup.\r\n\r\nMais tout n'est pas perdu pour autant.\r\nSi vous pouvez vous contenter d'acheter la cartouche seule, qui coute parfois jusqu'à 10 fois moins cher que sa version complète, je vous propose de fabriquer vos propres boites pour embellir à moindre frais votre étagère, et ainsi frimer devant vos amis (dites moi si j'en fait trop).\r\n\r\nDans cet atelier, je vais tout vous expliquer très simplement. Nous allons manier le cutter et la planche à découper et vous pourrez repartir avec un souvenir exclusif pour les 10 ans du Riviera DEV, que vous aurez fabriqué vous-même.\r\n\r\n[http://www.nintandbox.net](http://www.nintandbox.net)",
+  "start": 1558096200000,
+  "end": 1558099200000,
+  "category": "Ateliers «On n'est pas que des codeurs»",
+  "place": "Ateliers «On n'est pas que des codeurs»",
+  "speakers": [
+   {
+    "name": "Lionel Amalric",
+    "description": "Lionel travaille pour Air France en tant qu'Ingénieur en développement informatique.\r\nPassionné par les nouvelles technologies Web, il reste aussi tourné vers le passé avec le retrogaming qui occupe une part importante dans sa vie.\r\nLionel fait partie de l'association RE-PLAY qui organise un festival éponyme chaque année à Mouans-Sartoux sur le thème des jeux vidéo ancians.\r\nEn parallèle, il s'occupe du projet NintAndBox.net qu'il a créé il y a plus de 10 ans, et qui permet de contribuer à la sauvegarde du patrimoine vidéo ludique d'une époque bénie et révolue",
+    "company": "Air France",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=693",
+    "profilUrl": "http://www.nintandbox.net"   } 
+  ]
+ }, 
+ {
+  "name": "La révolution dans vos apps, c'est la gestion de l'état!",
+  "description": "Une révolution (presque) silencieuse est en cours dans le domaine des webapps, et pourtant nous sommes nombreux à passer à coté. Redux, VueX, NgRx, ces noms vous disent surement quelque chose? Découvrez pourquoi changer la gestion de l'état dans vos app va révolutionner votre manière de développer!\r\n\r\n\r\nAngular, React, Vue… Le choix du framework, ce n'est pas le plus important aujourd'hui.\r\nLe coeur du problème n'est plus comment faire des composants web et quelle est la meilleure manière de le faire, mais plutot comment gérer leur état. Découvrez les grands principes derrière la gestion d'état centralisé, ses bénéfices sur les performances, la maintenance et le débuggage de vos apps.\r\n\r\n\r\nAprès un peu de théorie, nous verrons à travers des examples de code les différences que cela implique dans une application… quelque soit le framework utilisé! \r\n",
+  "start": 1557998400000,
+  "end": 1558001400000,
+  "category": "Conference 2",
+  "place": "Conference 2",
+  "speakers": [
+   {
+    "name": "Yohan Lasorsa",
+    "description": "Passionné d'Open Source et artisan logiciel chevronné, le Web est pour moi un terrain de jeu universel. En tant qu'ingénieur fullstack et bricoleur du dimanche, j'aime pousser des morceaux de JavaScript partout où c'est possible :)",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=576",
+    "social": {
+     "twitterUrl": "http://twitter.com/sinedied"
+    }   } 
+  ]
+ }, 
+ {
+  "name": "Authentification/Autorisation, le grand battle",
+  "description": "Lorsque l'on commence à développer une nouvelle app ou un nouveau service, on doit penser à la façon doit on va gérer l'authentification et les permissions.\r\nMais comme tout un chacun,  nous n'avons aucune envie de penser à ces questions. Ah, si quelqu'un pouvait gérer ça pour nous, la vie serait si douce…\r\nEt c'est arrivé, aujourd'hui, on a le choix entre plusieurs boilerplates et différentes librairies d'authentification/autorisation.\r\nOauth, JWT, Biscuit ou encore Kerberos pour ne citer qu'elles. Laquelle choisir ?  Testons-les !\r\n\r\nL'heure de la bataille a sonné !\r\nDans ce talk nous allons implémenter les différentes possibilités les plus connues pour gérer l'authentification et les permissions pour vous permettre d'avoir une bonne vision des différentes solutions disponibles et leurs avantages.\r\n",
+  "start": 1558014600000,
+  "end": 1558017600000,
+  "category": "Conference 2",
+  "place": "Conference 2",
+  "speakers": [
+   {
+    "name": "Valeriane Venance",
+    "description": "Developer Advocate @clever_cloud, Freelance web developer, backpack travelling and electronic music addict",
+    "company": "Clever Cloud",
+    "avatar": "http://rivieradev.fr/application/speakerphoto?id=597",
+    "social": {
+     "twitterUrl": "http://twitter.com/valeriane_IT"
+    }   } 
+  ]
+ } 
+]
